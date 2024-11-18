@@ -35,7 +35,7 @@ export default defineNuxtConfig({
   modules: ['@vesp/nuxt-fontawesome'],
   fontawesome: {
     icons: {
-      regular: ['child'],
+      solid: ['phone'],
     }
   }
 })

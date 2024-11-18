@@ -1414,7 +1414,7 @@ contact
     color: #fff;
 }
 
-.phone-info h4 span i {
+.phone-info h4 span {
     width: 46px;
     height: 46px;
     display: inline-block;
@@ -1428,10 +1428,10 @@ contact
     margin-right: 15px;
 }
 
-.phone-info h4 span a {
+.phone-info h4 a {
     color: #fff;
-    font-size: 15px;
-    font-weight: 400;
+    font-size: 20px;
+    font-weight: 700;
 }
 
 form#contact .contact-dec {

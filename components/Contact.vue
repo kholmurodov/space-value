@@ -8,8 +8,8 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doer ket eismod tempor
                             incididunt ut labore et dolores</p>
                         <div class="phone-info">
-                            <h4>For any enquiry, Call Us: <span><font-awesome :icon="['far', 'child']" />
-                                    <a href="#">010-020-0340</a></span>
+                            <h4>For any enquiry, Call Us: <span><font-awesome :icon="['fas', 'phone']" /></span>
+                                <a href="#">010-020-0340</a>
                             </h4>
                         </div>
                     </div>
