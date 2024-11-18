@@ -4,12 +4,10 @@
             <div class="row">
                 <div class="col-12">
                     <nav class="main-nav">
-                        <!-- ***** Logo Start ***** -->
-                        <a href="index.html" class="logo">
+                        <nuxt-link to="/" class="logo">
                             <h4>Space<span>&</span>Value</h4>
-                        </a>
-                        <!-- ***** Logo End ***** -->
-                        <!-- ***** Menu Start ***** -->
+                        </nuxt-link>
+
                         <ul class="nav">
                             <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
                             <li class="scroll-to-section"><a href="#about">About Us</a></li>
@@ -24,7 +22,6 @@
                         <a class='menu-trigger'>
                             <span>Menu</span>
                         </a>
-                        <!-- ***** Menu End ***** -->
                     </nav>
                 </div>
             </div>
@@ -32,6 +29,14 @@
     </div>
 </template>
 
-<script setup>
+<script lang="ts">
+import { defineComponent } from 'vue'
 
+export default defineComponent({
+    mounted() {
+
+    },
+})
 </script>
+
+<style scoped></style>

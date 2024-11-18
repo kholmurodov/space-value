@@ -5,16 +5,28 @@
 // })
 
 export default defineNuxtConfig({
+
+  app: {
+    head: {
+      script: [
+        { 'src': '/js/jquery.min.js', tagPosition: 'bodyClose' },
+        { 'src': '/js/owl-carousel.js', tagPosition: 'bodyClose' },
+        { 'src': '/js/animation.js', tagPosition: 'bodyClose' },
+        { 'src': '/js/imagesloaded.js', tagPosition: 'bodyClose' },
+        { 'src': '/js/templatemo-custom.js', tagPosition: 'bodyClose' },
+      ],
+    },
+  },
   css: [
     '~/assets/css/animated.css',
     '~/assets/css/templatemo-space-dynamic.css',
     '~/assets/css/owl.css',
     '~/assets/styles/main.scss',
   ],
-
   ssr: false,
 
-  plugins: [],
+  plugins: [
+  ],
 
   $production: {
     routeRules: {
