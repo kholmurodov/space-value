@@ -1,4 +1,4 @@
-<template setup>
+<template>
     <div id="contact" class="contact-us section">
         <div class="container">
             <div class="row">

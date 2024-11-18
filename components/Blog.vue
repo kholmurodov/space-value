@@ -1,4 +1,4 @@
-<template setup>
+<template>
     <div id="blog" class="our-blog section">
         <div class="container">
             <div class="row">
