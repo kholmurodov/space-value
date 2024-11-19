@@ -6,8 +6,12 @@
 
 export default defineNuxtConfig({
 
+
   app: {
     head: {
+      title: 'Space&Value',
+      link: [{ rel: 'icon', type: 'image/png', href: "/education.png" }],
+
       script: [
         { 'src': '/js/jquery.min.js', tagPosition: 'bodyClose' },
         { 'src': '/js/owl-carousel.js', tagPosition: 'bodyClose' },
@@ -17,12 +21,14 @@ export default defineNuxtConfig({
       ],
     },
   },
+
   css: [
     '~/assets/css/animated.css',
     '~/assets/css/templatemo-space-dynamic.css',
     '~/assets/css/owl.css',
     '~/assets/styles/main.scss',
   ],
+
   ssr: false,
 
   plugins: [
@@ -45,9 +51,12 @@ export default defineNuxtConfig({
   },
 
   modules: ['@vesp/nuxt-fontawesome'],
+
   fontawesome: {
     icons: {
       solid: ['phone'],
     }
-  }
+  },
+
+  compatibilityDate: '2024-11-19'
 })

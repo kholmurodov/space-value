@@ -7,7 +7,7 @@
                         <div class="col-lg-6 align-self-center">
                             <div class="left-content header-text wow fadeInLeft" data-wow-duration="1s"
                                 data-wow-delay="1s">
-                                <h6>Welcome to <span>Space</span>&<span>Value</span></h6>
+                                <h6>Welcome to <span>(주)공간과가치</span></h6>
                                 <h2>We Make <em>Digital Ideas</em> &amp; <span>SEO</span> Marketing</h2>
                                 <p>Space&Value is specializes in creating, designing, and maintaining websites and web
                                     applications tailored to meet client needs, whether for businesses, organizations,

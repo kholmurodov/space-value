@@ -10,7 +10,7 @@
                 <div class="col-lg-6 wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.2s">
                     <div class="section-heading">
                         <h2>Grow your website with our <em>SEO</em> service &amp; <span>Project</span> Ideas</h2>
-                        <p>Space&Dynamic HTML5 template is free to use for your website projects. However, you are not
+                        <p>(주)공간과가치 HTML5 template is free to use for your website projects. However, you are not
                             permitted to redistribute the template ZIP file on any CSS template collection websites.
                             Please contact us for more information. Thank you for your kind cooperation.</p>
                     </div>

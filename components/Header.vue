@@ -5,7 +5,7 @@
                 <div class="col-12">
                     <nav class="main-nav">
                         <nuxt-link to="/" class="logo">
-                            <h4>Space<span>&</span>Value</h4>
+                            <img class="logo-img" src="assets/images/logo.jpg" alt="logo">
                         </nuxt-link>
 
                         <ul class="nav">
@@ -14,7 +14,7 @@
                             <li class="scroll-to-section"><a href="#services">Services</a></li>
                             <li class="scroll-to-section"><a href="#portfolio">Portfolio</a></li>
                             <li class="scroll-to-section"><a href="#blog">Blog</a></li>
-                            <li class="scroll-to-section"><a href="#contact">Message Us</a></li>
+                            <li class="scroll-to-section" v-if="false"><a href="#contact">Message Us</a></li>
                             <li class="scroll-to-section">
                                 <div class="main-red-button"><a href="#contact">Contact Now</a></div>
                             </li>
