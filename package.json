@@ -10,6 +10,7 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "@nuxtjs/i18n": "^9.1.0",
     "@vesp/nuxt-fontawesome": "^1.1.0",
     "bootstrap": "^5.3.3",
     "jquery": "^3.7.1",

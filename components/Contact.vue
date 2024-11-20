@@ -8,8 +8,9 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doer ket eismod tempor
                             incididunt ut labore et dolores</p>
                         <div class="phone-info">
-                            <h4>For any enquiry, Call Us: <span><font-awesome :icon="['fas', 'phone']" /></span>
-                                <a href="#">010-020-0340</a>
+                            <h4>{{ $t("enquiry") }}
+                                <span><font-awesome :icon="['fas', 'phone']" /></span>
+                                <a href="#">0269490901</a>
                             </h4>
                         </div>
                     </div>
@@ -19,14 +20,13 @@
                         <div class="row">
                             <div class="col-lg-6">
                                 <fieldset>
-                                    <input type="name" name="name" id="name" placeholder="Name" autocomplete="on"
+                                    <input type="name" name="name" id="name" placeholder=name autocomplete="on"
                                         required>
                                 </fieldset>
                             </div>
                             <div class="col-lg-6">
                                 <fieldset>
-                                    <input type="surname" name="surname" id="surname" placeholder="Surname"
-                                        autocomplete="on" required>
+                                    <input type="surname" name="surname" id="surname" placeholder=required>
                                 </fieldset>
                             </div>
                             <div class="col-lg-12">
@@ -43,7 +43,8 @@
                             </div>
                             <div class="col-lg-12">
                                 <fieldset>
-                                    <button type="submit" id="form-submit" class="main-button ">Send Message</button>
+                                    <button type="submit" id="form-submit" class="main-button ">{{ $t("sendBtn")
+                                        }}</button>
                                 </fieldset>
                             </div>
                         </div>

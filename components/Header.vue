@@ -9,18 +9,23 @@
                         </nuxt-link>
 
                         <ul class="nav">
-                            <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
-                            <li class="scroll-to-section"><a href="#about">About Us</a></li>
-                            <li class="scroll-to-section"><a href="#services">Services</a></li>
-                            <li class="scroll-to-section"><a href="#portfolio">Portfolio</a></li>
-                            <li class="scroll-to-section"><a href="#blog">Blog</a></li>
-                            <li class="scroll-to-section" v-if="false"><a href="#contact">Message Us</a></li>
+                            <li class="scroll-to-section"><a href="#top" class="active">{{ $t("home") }}</a></li>
+                            <li class="scroll-to-section"><a href="#about">{{ $t("aboutUs") }}</a></li>
+                            <li class="scroll-to-section"><a href="#services">{{ $t("services") }}</a></li>
+                            <li class="scroll-to-section"><a href="#portfolio">{{ $t("portfolio") }}</a></li>
+                            <li class="scroll-to-section"><a href="#blog">{{ $t("blog") }}</a></li>
                             <li class="scroll-to-section">
-                                <div class="main-red-button"><a href="#contact">Contact Now</a></div>
+                                <a href="#" @click.prevent="setLocale('en')">En</a>
+                            </li>
+                            <li class="scroll-to-section">
+                                <a href="#" @click.prevent="setLocale('kr')">Kor</a>
+                            </li>
+                            <li class="scroll-to-section">
+                                <div class="main-red-button"><a href="#contact">{{ $t("contactUs") }}</a></div>
                             </li>
                         </ul>
                         <a class='menu-trigger'>
-                            <span>Menu</span>
+                            <span>{{ $t("menu") }}</span>
                         </a>
                     </nav>
                 </div>
@@ -29,14 +34,8 @@
     </header>
 </template>
 
-<script lang="ts">
-import { defineComponent } from 'vue'
-
-export default defineComponent({
-    mounted() {
-
-    },
-})
+<script setup lang="ts">
+const { setLocale } = useI18n()
 </script>
 
 <style scoped></style>

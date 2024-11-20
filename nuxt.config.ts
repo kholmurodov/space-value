@@ -50,7 +50,22 @@ export default defineNuxtConfig({
     }
   },
 
-  modules: ['@vesp/nuxt-fontawesome'],
+  modules: ['@vesp/nuxt-fontawesome', '@nuxtjs/i18n'],
+  i18n: {
+    // Module Options
+    lazy: true,
+    langDir: "locales",
+    strategy: "prefix_except_default",
+    defaultLocale: "kr", // Default Language
+    detectBrowserLanguage: {
+      useCookie: true,
+      alwaysRedirect: true
+    },
+    locales: [
+      { code: "kr", iso: "kr-KR", file: "kr.json" },
+      { code: "en", iso: "en-US", file: "en.json" },
+    ],
+  },
 
   fontawesome: {
     icons: {
