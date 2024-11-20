@@ -54,7 +54,7 @@ export default defineNuxtConfig({
 
   fontawesome: {
     icons: {
-      solid: ['phone'],
+      solid: ['phone', 'calendar', 'user', 'folder'],
     }
   },
 

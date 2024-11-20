@@ -20,9 +20,9 @@
                         <div class="info">
                             <div class="inner-content">
                                 <ul>
-                                    <li><i class="fa fa-calendar"></i> 24 Mar 2021</li>
-                                    <li><i class="fa fa-users"></i> TemplateMo</li>
-                                    <li><i class="fa fa-folder"></i> Branding</li>
+                                    <li><span><font-awesome :icon="['fas', 'calendar']" /></span> 24 Sep 2024</li>
+                                    <li><span><font-awesome :icon="['fas', 'user']" /> </span>Education</li>
+                                    <li><span><font-awesome :icon="['fas', 'folder']" /></span>Branding</li>
                                 </ul>
                                 <a href="#">
                                     <h4>SEO Agency &amp; Digital Marketing</h4>
@@ -41,38 +41,42 @@
                         <ul>
                             <li>
                                 <div class="left-content align-self-center">
-                                    <span><i class="fa fa-calendar"></i> 18 Mar 2021</span>
+                                    <span><font-awesome :icon="['fas', 'calendar']" />
+                                        <span class="date">18 Mar 2024</span>
+                                    </span>
                                     <a href="#">
                                         <h4>New Websites &amp; Backlinks</h4>
                                     </a>
                                     <p>Lorem ipsum dolor sit amsecteturii and sed doer ket eismod...</p>
                                 </div>
                                 <div class="right-image">
-                                    <a href="#"><img src="assets/images/blog-thumb-01.jpg" alt=""></a>
+                                    <a href="#"><img src="assets/images/blog.jpg" alt=""></a>
                                 </div>
                             </li>
                             <li>
                                 <div class="left-content align-self-center">
-                                    <span><i class="fa fa-calendar"></i> 14 Mar 2021</span>
+                                    <span><font-awesome :icon="['fas', 'calendar']" /> <span class="date">14 Mar
+                                            2021</span></span>
                                     <a href="#">
                                         <h4>SEO Analysis &amp; Content Ideas</h4>
                                     </a>
                                     <p>Lorem ipsum dolor sit amsecteturii and sed doer ket eismod...</p>
                                 </div>
                                 <div class="right-image">
-                                    <a href="#"><img src="assets/images/blog-thumb-01.jpg" alt=""></a>
+                                    <a href="#"><img src="assets/images/blog.jpg" alt=""></a>
                                 </div>
                             </li>
                             <li>
                                 <div class="left-content align-self-center">
-                                    <span><i class="fa fa-calendar"></i> 06 Mar 2021</span>
+                                    <span><font-awesome :icon="['fas', 'calendar']" /> <span class="date">06 Mar
+                                            2024</span></span>
                                     <a href="#">
                                         <h4>SEO Tips &amp; Digital Marketing</h4>
                                     </a>
                                     <p>Lorem ipsum dolor sit amsecteturii and sed doer ket eismod...</p>
                                 </div>
                                 <div class="right-image">
-                                    <a href="#"><img src="assets/images/blog-thumb-01.jpg" alt=""></a>
+                                    <a href="#"><img src="assets/images/blog.jpg" alt="right-img"></a>
                                 </div>
                             </li>
                         </ul>

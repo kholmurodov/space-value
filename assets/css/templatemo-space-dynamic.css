@@ -1318,12 +1318,25 @@ Blog
     padding: 30px;
 }
 
+.our-blog .left-image .info .inner-content span {
+    padding: 0;
+    color: #03a4ed;
+    font-size: 16px;
+    margin-right: 8px;
+}
+
+.our-blog .left-image ul {
+    margin: 0;
+    padding: 0;
+}
+
 .our-blog .left-image ul li {
     display: inline-block;
     font-size: 15px;
     color: #afafaf;
     font-weight: 300;
     margin-right: 20px;
+    padding: 0px;
 }
 
 .our-blog .left-image ul li:last-child {
@@ -1353,6 +1366,11 @@ Blog
     margin-left: 30px;
 }
 
+.our-blog .right-list ul {
+    padding: 0;
+    margin: 0;
+}
+
 .our-blog .right-list ul li {
     display: inline-flex;
     width: 100%;
@@ -1363,16 +1381,18 @@ Blog
     margin-right: 45px;
 }
 
-.our-blog .right-list .left-content span {
+.our-blog .right-list .left-content .date {
     font-size: 15px;
     color: #afafaf;
     font-weight: 300;
+    margin-left: 8px;
 }
 
-.our-blog .right-list .left-content span i {
-    color: #ff4d61;
+.our-blog .right-list .left-content span {
+    /* color: #ff4d61; */
+    color: #03a4ed;
     font-size: 16px;
-    margin-right: 8px;
+
 }
 
 .our-blog .right-list .left-content h4 {
@@ -1384,7 +1404,9 @@ Blog
 
 
 .our-blog .right-list .right-image img {
+    object-fit: cover;
     width: 250px;
+    height: 217px;
     border-radius: 20px;
 }
 
@@ -1432,7 +1454,8 @@ contact
     line-height: 46px;
     background-color: #fff;
     border-radius: 50%;
-    color: #ff3b2c;
+    color: #03a4ed;
+    /* color: #ff3b2c; */
     font-size: 22px;
     margin-left: 30px;
     margin-right: 15px;
@@ -1593,8 +1616,10 @@ responsive
     }
 
     .about-us .services .item {
-        background: rgb(255, 77, 30);
-        background: linear-gradient(105deg, rgba(255, 77, 30, 1) 0%, rgba(255, 44, 109, 1) 100%);
+        /* background: rgb(255, 77, 30);
+        background: linear-gradient(105deg, rgba(255, 77, 30, 1) 0%, rgba(255, 44, 109, 1) 100%); */
+        background: rgb(3, 164, 237);
+        background: linear-gradient(105deg, rgb(3, 164, 237) 0%, rgb(3, 164, 237) 100%);
         padding: 30px;
         border-radius: 20px;
         display: inline-block;
@@ -1706,12 +1731,20 @@ responsive
         width: 100%;
     }
 
+    .phone-info h4 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     .phone-info h4 span {
         display: block;
         margin-top: 15px;
     }
 
-    .phone-info h4 span i {
-        margin-left: 0px;
+    .phone-info h4 a {
+        padding: 0;
+        margin: 0;
+        padding-top: 15px;
     }
 }
