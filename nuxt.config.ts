@@ -9,8 +9,8 @@ export default defineNuxtConfig({
 
   app: {
     head: {
-      title: 'Space&Value',
-      link: [{ rel: 'icon', type: 'image/png', href: "/education.png" }],
+      title: '(주)공간과가치',
+      link: [{ rel: 'icon', type: 'image/png', href: "/icon.png" }],
 
       script: [
         { 'src': '/js/jquery.min.js', tagPosition: 'bodyClose' },
