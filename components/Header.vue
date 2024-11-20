@@ -14,11 +14,10 @@
                             <li class="scroll-to-section"><a href="#services">{{ $t("services") }}</a></li>
                             <li class="scroll-to-section"><a href="#portfolio">{{ $t("portfolio") }}</a></li>
                             <li class="scroll-to-section"><a href="#blog">{{ $t("blog") }}</a></li>
-                            <li class="scroll-to-section">
-                                <a href="#" @click.prevent="setLocale('en')">En</a>
-                            </li>
-                            <li class="scroll-to-section">
-                                <a href="#" @click.prevent="setLocale('kr')">Kor</a>
+                            <li>
+                                <a v-if="localeProperties.code == 'kr'" href="#"
+                                    @click.prevent="setLocale('en')">Eng</a>
+                                <a v-else href="#" @click.prevent="setLocale('kr')">한국어</a>
                             </li>
                             <li class="scroll-to-section">
                                 <div class="main-red-button"><a href="#contact">{{ $t("contactUs") }}</a></div>
@@ -35,7 +34,7 @@
 </template>
 
 <script setup lang="ts">
-const { setLocale } = useI18n()
+const { setLocale, localeProperties } = useI18n();
 </script>
 
 <style scoped></style>
