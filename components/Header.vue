@@ -15,9 +15,9 @@
                             <li class="scroll-to-section"><a href="#portfolio">{{ $t("portfolio") }}</a></li>
                             <li class="scroll-to-section"><a href="#blog">{{ $t("blog") }}</a></li>
                             <li>
-                                <a v-if="localeProperties.code == 'kr'" href="#"
+                                <a v-if="localeProperties.code == 'kr'" href="#top"
                                     @click.prevent="setLocale('en')">Eng</a>
-                                <a v-else href="#" @click.prevent="setLocale('kr')">한국어</a>
+                                <a v-else href="#top" @click.prevent="setLocale('kr')">한국어</a>
                             </li>
                             <li class="scroll-to-section">
                                 <div class="main-red-button"><a href="#contact">{{ $t("contactUs") }}</a></div>

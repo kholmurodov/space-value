@@ -20,13 +20,13 @@
                         <div class="row">
                             <div class="col-lg-6">
                                 <fieldset>
-                                    <input type="name" name="name" id="name" placeholder=name autocomplete="on"
+                                    <input type="name" name="name" id="name" placeholder="Name" autocomplete="on"
                                         required>
                                 </fieldset>
                             </div>
                             <div class="col-lg-6">
                                 <fieldset>
-                                    <input type="surname" name="surname" id="surname" placeholder=required>
+                                    <input type="surname" name="surname" id="surname" placeholder="Surname" required>
                                 </fieldset>
                             </div>
                             <div class="col-lg-12">

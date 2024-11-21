@@ -50,7 +50,7 @@ export default defineNuxtConfig({
     }
   },
 
-  modules: ['@vesp/nuxt-fontawesome', '@nuxtjs/i18n'],
+  modules: ['@vesp/nuxt-fontawesome', '@nuxtjs/i18n', '@pinia/nuxt'],
   i18n: {
     // Module Options
     lazy: true,
