@@ -7,8 +7,11 @@
     <Contact />
 </template>
 
-<!-- <script setup lang="ts">
-const runtimeConfig = useRuntimeConfig()
-</script> -->
+<script lang="ts" setup>
+definePageMeta({
+    layout: "home"
+});
+</script>
+
 
 <style scoped></style>

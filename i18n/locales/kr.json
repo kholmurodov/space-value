@@ -5,6 +5,8 @@
     "portfolio": "포트폴리오",
     "blog": "블로그",
     "contactUs": "문의하기",
+    "login": "로그인",
+    "signUp": "회원가입",
     "menu": "메뉴",
     "company": "(주)공간과가치",
     "intro": "환영합니다!",
@@ -13,5 +15,8 @@
     "surname": "성",
     "email": "이메일",
     "message": "메시지 ",
-    "sendBtn": "메시지 보내기"
+    "sendBtn": "메시지 보내기",
+    "blogs": {
+        "more": "더 보기"
+    }
 }

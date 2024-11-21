@@ -36,7 +36,7 @@
                                 </a>
                                 <p>{{ latest.description }}</p>
                                 <div class="main-blue-button">
-                                    <a href="#">Discover More</a>
+                                    <nuxt-link to="/blogs">{{ $t("blogs.more") }}</nuxt-link>
                                 </div>
                             </div>
                         </div>

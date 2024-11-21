@@ -5,6 +5,8 @@
     "portfolio": "Portfolio",
     "blog": "Blog",
     "contactUs": "Contact Us",
+    "login": "Login",
+    "signUp": "Sign Up",
     "menu": "menu",
     "intro": "Welcome to",
     "company": "Space&Value",
@@ -13,5 +15,8 @@
     "surname": "Surname",
     "email": "Your Email",
     "message": "Message",
-    "sendBtn": "Send Message"
+    "sendBtn": "Send Message",
+    "blogs": {
+        "more": "More"
+    }
 }

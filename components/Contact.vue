@@ -10,7 +10,7 @@
                         <div class="phone-info">
                             <h4>{{ $t("enquiry") }}
                                 <span><font-awesome :icon="['fas', 'phone']" /></span>
-                                <a href="#">0269490901</a>
+                                <a href="#">02-6949-0901</a>
                             </h4>
                         </div>
                     </div>

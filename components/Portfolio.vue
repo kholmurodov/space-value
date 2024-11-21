@@ -9,54 +9,16 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-3 col-sm-6">
+                <div v-for="offer in offers" :key="offer.title" class="col-lg-3 col-sm-6">
                     <a href="#">
                         <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.3s">
                             <div class="hidden-content">
-                                <h4>SEO Analysis</h4>
-                                <p>Lorem ipsum dolor sit ameti ctetur aoi adipiscing eto.</p>
+                                <h4>{{ offer.title }}</h4>
+                                <p>{{ offer.description }}</p>
                             </div>
                             <div class="showed-content">
-                                <img src="assets/images/portfolio-image.png" alt="">
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-3 col-sm-6">
-                    <a href="#">
-                        <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.4s">
-                            <div class="hidden-content">
-                                <h4>Website Reporting</h4>
-                                <p>Lorem ipsum dolor sit ameti ctetur aoi adipiscing eto.</p>
-                            </div>
-                            <div class="showed-content">
-                                <img src="assets/images/portfolio-image.png" alt="">
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-3 col-sm-6">
-                    <a href="#">
-                        <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.5s">
-                            <div class="hidden-content">
-                                <h4>Performance Tests</h4>
-                                <p>Lorem ipsum dolor sit ameti ctetur aoi adipiscing eto.</p>
-                            </div>
-                            <div class="showed-content">
-                                <img src="assets/images/portfolio-image.png" alt="">
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-3 col-sm-6">
-                    <a href="#">
-                        <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.6s">
-                            <div class="hidden-content">
-                                <h4>Data Analysis</h4>
-                                <p>Lorem ipsum dolor sit ameti ctetur aoi adipiscing eto.</p>
-                            </div>
-                            <div class="showed-content">
-                                <img src="assets/images/portfolio-image.png" alt="">
+                                <img v-if="offer.image" :src="offer.image" :alt="offer.title">
+                                <img v-else src="assets/images/portfolio-image.png" :alt="offer.title">
                             </div>
                         </div>
                     </a>
@@ -65,3 +27,9 @@
         </div>
     </div>
 </template>
+
+<script setup lang="ts">
+const store = useOfferStore();
+const { offers } = store;
+
+</script>
