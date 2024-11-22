@@ -13,7 +13,7 @@
                             <div class="col-lg-6">
                                 <div class="item wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
                                     <div class="icon">
-                                        <img src="assets/images/service-icon-01.png" alt="reporting">
+                                        <img src="assets/images/service-icon-01.jpg" alt="reporting">
                                     </div>
                                     <div class="right-text">
                                         <h4>Data Analysis</h4>
@@ -24,7 +24,7 @@
                             <div class="col-lg-6">
                                 <div class="item wow fadeIn" data-wow-duration="1s" data-wow-delay="0.7s">
                                     <div class="icon">
-                                        <img src="assets/images/service-icon-02.png" alt="">
+                                        <img src="assets/images/service-icon-02.jpg" alt="">
                                     </div>
                                     <div class="right-text">
                                         <h4>Data Reporting</h4>
@@ -35,7 +35,7 @@
                             <div class="col-lg-6">
                                 <div class="item wow fadeIn" data-wow-duration="1s" data-wow-delay="0.9s">
                                     <div class="icon">
-                                        <img src="assets/images/service-icon-03.png" alt="">
+                                        <img src="assets/images/service-icon-03.jpg" alt="">
                                     </div>
                                     <div class="right-text">
                                         <h4>Web Analytics</h4>
@@ -46,7 +46,7 @@
                             <div class="col-lg-6">
                                 <div class="item wow fadeIn" data-wow-duration="1s" data-wow-delay="1.1s">
                                     <div class="icon">
-                                        <img src="assets/images/service-icon-04.png" alt="">
+                                        <img src="assets/images/service-icon-01.jpg" alt="">
                                     </div>
                                     <div class="right-text">
                                         <h4>SEO Suggestions</h4>
