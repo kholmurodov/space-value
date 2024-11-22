@@ -26,10 +26,10 @@
                                 <div class="row">
                                     <div class="col-lg-12 mb-5">
                                         <div class="single-blog-item">
-                                            <img class="img-fluid
-                                            rounded" v-if="blog.image" :src="blog.image" :alt="blog.title">
-                                            <img class="img-fluid
-                                            rounded" v-else src="/assets/images/blog.jpg" :alt="blog.title">
+                                            <img class="img-fluid rounded" v-if="blog.image" :src="blog.image"
+                                                :alt="blog.title">
+                                            <img class="img-fluid rounded" v-else src="/assets/images/blog.jpg"
+                                                :alt="blog.title">
 
                                             <div class="blog-item-content bg-white p-5">
                                                 <div class="blog-item-meta bg-gray py-1 px-2">
@@ -39,7 +39,7 @@
                                                 </div>
                                                 <p>{{ blog.description }}</p>
 
-                                                <div class="tag-option mt-5 clearfix">
+                                                <div class="tag-option mt-5 clearfix" v-if="blog.tags?.length">
                                                     <h4>Tags:</h4>
                                                     <ul v-for="tag in blog.tags" :key="tag.id"
                                                         class="float-left list-inline">

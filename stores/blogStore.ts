@@ -8,20 +8,12 @@ type BlogType = {
 }
 
 type BlogStoreShape = {
-    latest?: BlogType | null;
+    tags: string[];
     blogs: BlogType[];
 }
 
 export const useBlogStore = defineStore('blog', {
     state: (): BlogStoreShape => ({
-        latest: {
-            id: '123',
-            title: 'SEO Agency &amp; Digital Marketing',
-            image: '',
-            description: 'Lorem ipsum dolor sit amet, consectetur and sed doer ket eismod tempor incididunt ut labore et dolore magna...',
-            createdAt: new Date(),
-            tags: ['Education', 'Branding']
-        },
         blogs: [
             {
                 id: '1234',
@@ -44,13 +36,13 @@ export const useBlogStore = defineStore('blog', {
                 description: 'Lorem ipsum dolor sit amet, consectetur and sed doer ket eismod tempor incididunt ut labore et dolore magna...',
                 createdAt: new Date()
             },
-
-        ]
+        ],
+        tags: ['Web', 'Agency', 'Company', 'Creative', 'Html', 'Marketing', 'Social', 'Media', 'Branding']
     }),
     getters: {
-        getBlog: (state) => {
-            return (id: string) => state.blogs.find(b => b.id === id);
-        },
+        latest: (state) => state.blogs.length ? state.blogs[0] : null,
+        latest5: (state) => state.blogs.length <= 5 ? state.blogs : [], //logic
+        getBlog: (state) => (id: string) => state.blogs.find(b => b.id === id),
         blogCount: (state) => state.blogs.length,
     },
     actions: {
