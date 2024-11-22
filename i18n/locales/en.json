@@ -1,21 +1,23 @@
 {
-    "home": "Home",
-    "aboutUs": "About Us",
-    "services": "Services",
-    "portfolio": "Portfolio",
-    "blog": "Blog",
-    "contactUs": "Contact Us",
-    "login": "Login",
-    "signUp": "Sign Up",
-    "menu": "menu",
-    "intro": "Welcome to",
-    "company": "Space&Value",
-    "enquiry": "For any enquiry, Call Us:",
-    "userName": "Name",
-    "surname": "Surname",
-    "email": "Your Email",
-    "message": "Message",
-    "sendBtn": "Send Message",
+    "navbar": {
+        "home": "Home",
+        "aboutUs": "About Us",
+        "services": "Services",
+        "portfolio": "Portfolio",
+        "blog": "Blog",
+        "contactUs": "Contact Us",
+        "login": "Login",
+        "signUp": "Sign Up",
+        "menu": "menu"
+    },
+    "hero": {
+        "intro": "Welcome to",
+        "company": "Space&Value"
+    },
+    "contact": {
+        "enquiry": "For any enquiry, Call Us:",
+        "sendBtn": "Send Message"
+    },
     "blogs": {
         "more": "More"
     }

@@ -1,21 +1,23 @@
 {
-    "home": "홈",
-    "aboutUs": "소개",
-    "services": "서비스",
-    "portfolio": "포트폴리오",
-    "blog": "블로그",
-    "contactUs": "문의하기",
-    "login": "로그인",
-    "signUp": "회원가입",
-    "menu": "메뉴",
-    "company": "(주)공간과가치",
-    "intro": "환영합니다!",
-    "enquiry": "문의 사항이 있으시면.",
-    "userName": "이름",
-    "surname": "성",
-    "email": "이메일",
-    "message": "메시지 ",
-    "sendBtn": "메시지 보내기",
+    "navbar": {
+        "home": "홈",
+        "aboutUs": "소개",
+        "services": "서비스",
+        "portfolio": "포트폴리오",
+        "blog": "블로그",
+        "contactUs": "문의하기",
+        "login": "로그인",
+        "signUp": "회원가입",
+        "menu": "메뉴"
+    },
+    "hero": {
+        "company": "(주)공간과가치",
+        "intro": "환영합니다!"
+    },
+    "contact": {
+        "sendBtn": "메시지 보내기",
+        "enquiry": "문의 사항이 있으시면."
+    },
     "blogs": {
         "more": "더 보기"
     }

@@ -48,7 +48,9 @@ export const useBlogStore = defineStore('blog', {
         ]
     }),
     getters: {
-        blog: (state) => (id: string) => state.blogs.find(b => b.id === id),
+        getBlog: (state) => {
+            return (id: string) => state.blogs.find(b => b.id === id);
+        },
         blogCount: (state) => state.blogs.length,
     },
     actions: {

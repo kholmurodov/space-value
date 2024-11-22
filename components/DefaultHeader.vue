@@ -15,7 +15,7 @@
                                 <a v-else href="#multilang" @click.prevent="setLocale('kr')">한국어</a>
                             </li>
                             <li class="scroll-to-section">
-                                <div class="main-red-button"><a href="#contact">{{ $t("login") }}</a></div>
+                                <div class="main-red-button"><a href="#contact">{{ $t("navbar.login") }}</a></div>
                             </li>
                         </ul>
                         <a class='menu-trigger'>

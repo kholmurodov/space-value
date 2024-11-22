@@ -8,7 +8,7 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doer ket eismod tempor
                             incididunt ut labore et dolores</p>
                         <div class="phone-info">
-                            <h4>{{ $t("enquiry") }}
+                            <h4>{{ $t("contact.enquiry") }}
                                 <span><font-awesome :icon="['fas', 'phone']" /></span>
                                 <a href="#">02-6949-0901</a>
                             </h4>
@@ -43,7 +43,7 @@
                             </div>
                             <div class="col-lg-12">
                                 <fieldset>
-                                    <button type="submit" id="form-submit" class="main-button ">{{ $t("sendBtn")
+                                    <button type="submit" id="form-submit" class="main-button ">{{ $t("contact.sendBtn")
                                         }}</button>
                                 </fieldset>
                             </div>
