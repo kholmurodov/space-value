@@ -20,8 +20,7 @@ export default defineNuxtConfig({
 
   ssr: false,
 
-  plugins: [
-  ],
+  plugins: [],
 
   $production: {
     routeRules: {

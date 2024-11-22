@@ -14,7 +14,7 @@
                                 <div class="left-content align-self-center col-lg-9 wow fadeInUp" data-wow-duration="1s"
                                     data-wow-delay="0.25s">
                                     <span><font-awesome :icon="['fas', 'calendar']" />
-                                        <span class="date">{{ formatDate(blog.createdAt) }}</span>
+                                        <span class="date">{{ $formatDate(blog.createdAt) }}</span>
                                     </span>
                                     <nuxt-link :to="'/blogs/' + blog.id">
                                         <h4 v-html="blog.title"></h4>
@@ -40,20 +40,6 @@
 <script setup lang="ts">
 const store = useBlogStore();
 const { blogs } = store;
-
-function formatDate(date: Date) {
-    var d = new Date(date),
-        month = '' + (d.getMonth() + 1),
-        day = '' + d.getDate(),
-        year = d.getFullYear();
-
-    if (month.length < 2)
-        month = '0' + month;
-    if (day.length < 2)
-        day = '0' + day;
-
-    return [year, month, day].join('-');
-}
 </script>
 
 <style lang="scss" scoped></style>

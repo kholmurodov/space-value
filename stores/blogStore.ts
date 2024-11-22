@@ -41,7 +41,7 @@ export const useBlogStore = defineStore('blog', {
     }),
     getters: {
         latest: (state) => state.blogs.length ? state.blogs[0] : null,
-        latest5: (state) => state.blogs.length <= 5 ? state.blogs : [], //logic
+        latest5: (state) => state.blogs.length <= 5 ? state.blogs : state.blogs.slice(-5),
         getBlog: (state) => (id: string) => state.blogs.find(b => b.id === id),
         blogCount: (state) => state.blogs.length,
     },

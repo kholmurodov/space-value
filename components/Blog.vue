@@ -25,7 +25,7 @@
                                 <ul>
                                     <li>
                                         <span><font-awesome :icon="['fas', 'calendar']" /></span>
-                                        {{ formatDate(latest.createdAt) }}
+                                        {{ $formatDate(latest.createdAt) }}
                                     </li>
                                     <li v-for="tag in latest.tags" :key="tag">
                                         <span><font-awesome :icon="['fas', 'user']" /> </span>{{ tag }}
@@ -48,7 +48,7 @@
                             <li v-for="blog in blogs" :key="blog.id">
                                 <div class="left-content align-self-center">
                                     <span><font-awesome :icon="['fas', 'calendar']" />
-                                        <span class="date">{{ formatDate(blog.createdAt) }}</span>
+                                        <span class="date">{{ $formatDate(blog.createdAt) }}</span>
                                     </span>
                                     <a href="#">
                                         <h4 v-html="blog.title"></h4>
@@ -73,20 +73,6 @@
 <script setup lang="ts">
 const store = useBlogStore();
 const { latest, blogs } = store;
-
-function formatDate(date: Date) {
-    var d = new Date(date),
-        month = '' + (d.getMonth() + 1),
-        day = '' + d.getDate(),
-        year = d.getFullYear();
-
-    if (month.length < 2)
-        month = '0' + month;
-    if (day.length < 2)
-        day = '0' + day;
-
-    return [year, month, day].join('-');
-}
 </script>
 
 <style lang="scss" scoped></style>

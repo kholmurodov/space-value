@@ -5,14 +5,14 @@
                 <section class="page-title bg-1">
                     <div class="container">
                         <div class="block text-center">
-                            <h1 class="text-capitalize mb-4 text-lg text-white" v-html="blog.title"></h1>
+                            <h1 class="text-capitalize mb-4 text-lg text-white" v-html="blog?.title"></h1>
                             <ul class="list-inline">
                                 <li class="list-inline-item">
                                     <NuxtLink to="/" class="text-white">Home</NuxtLink>
                                 </li>
                                 <li class="list-inline-item"><span class="text-white-50">/</span></li>
                                 <li class="list-inline-item">
-                                    <span class="text-white-50" v-html="blog.title"></span>
+                                    <span class="text-white-50" v-html="blog?.title"></span>
                                 </li>
                             </ul>
                         </div>
@@ -26,10 +26,10 @@
                                 <div class="row">
                                     <div class="col-lg-12 mb-5">
                                         <div class="single-blog-item">
-                                            <img class="img-fluid rounded" v-if="blog.image" :src="blog.image"
-                                                :alt="blog.title">
+                                            <img class="img-fluid rounded" v-if="blog?.image" :src="blog?.image"
+                                                :alt="blog?.title">
                                             <img class="img-fluid rounded" v-else src="/assets/images/blog.jpg"
-                                                :alt="blog.title">
+                                                :alt="blog?.title">
 
                                             <div class="blog-item-content bg-white p-5">
                                                 <div class="blog-item-meta bg-gray py-1 px-2">
@@ -37,11 +37,11 @@
                                                         <font-awesome :icon="['fas', 'clock']" /> 28th January
                                                     </span>
                                                 </div>
-                                                <p>{{ blog.description }}</p>
+                                                <p>{{ blog?.description }}</p>
 
-                                                <div class="tag-option mt-5 clearfix" v-if="blog.tags?.length">
+                                                <div class="tag-option mt-5 clearfix" v-if="blog?.tags?.length">
                                                     <h4>Tags:</h4>
-                                                    <ul v-for="tag in blog.tags" :key="tag.id"
+                                                    <ul v-for="tag in blog?.tags" :key="tag"
                                                         class="float-left list-inline">
                                                         <li class="list-inline-item">
                                                             <a href="#" rel="tag">{{ tag }}</a>
@@ -58,24 +58,20 @@
                                     <div class="sidebar-widget latest-post card border-0 p-4 mb-3">
                                         <h5>Latest Posts</h5>
 
-                                        <div class="media border-bottom py-3">
-                                            <a href="#"><img class="mr-4" src="/assets/images/blog/blog_bg.png"
-                                                    alt=""></a>
+
+                                        <div class="media border-bottom py-3" v-for="blog in latest5">
+                                            <a href="#">
+                                                <img class="mr-4" v-if="blog?.image" :src="blog?.image"
+                                                    :alt="blog?.image">
+                                                <img class="mr-4" v-else src="/assets/images/blog.jpg"
+                                                    :alt="blog?.title"></a>
                                             <div class="media-body ml-3">
                                                 <h6 class="my-2">
-                                                    <a href="#">Thoughtful living in los Angeles</a>
+                                                    <a href="#" v-html="blog?.title"></a>
                                                 </h6>
-                                                <span class="text-sm text-muted">03 Mar 2018</span>
-                                            </div>
-                                        </div>
-                                        <div class="media py-3">
-                                            <a href="#"><img class="mr-4" src="/assets/images/blog/blog_bg.png"
-                                                    alt=""></a>
-                                            <div class="media-body ml-3">
-                                                <h6 class="my-2">
-                                                    <a href="#">Fusce lobortis lorem at ipsum semper sagittis</a>
-                                                </h6>
-                                                <span class="text-sm text-muted">03 Mar 2018</span>
+                                                <span class="text-sm text-muted">
+                                                    {{ $formatDate(blog?.createdAt) }}
+                                                </span>
                                             </div>
                                         </div>
                                     </div>
@@ -83,14 +79,9 @@
                                     <div class="sidebar-widget bg-white rounded tags p-4 mb-3">
                                         <h5 class="mb-4">Tags</h5>
 
-                                        <a class="mr-1" href="#">Web</a>
-                                        <a class="mr-1" href="#">agency</a>
-                                        <a class="mr-1" href="#">company</a>
-                                        <a class="mr-1" href="#">creative</a>
-                                        <a class="mr-1" href="#">html</a>
-                                        <a class="mr-1" href="#">Marketing</a>
-                                        <a class="mr-1" href="#">Social Media</a>
-                                        <a class="mr-1" href="#">Branding</a>
+                                        <div class="d-inline-block" v-for="tag in store.tags" :key="tag">
+                                            <a class="mr-1" href="#">{{ tag }}</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -102,12 +93,12 @@
     </main>
 </template>
 
-<script setup>
+<script setup lang="ts">
+
 const route = useRoute();
 const { id } = route.params;
 
 const store = useBlogStore();
-const { getBlog } = store;
-
-const blog = getBlog(id);
+const { getBlog, latest5 } = store;
+const blog = getBlog(id as string);
 </script>
