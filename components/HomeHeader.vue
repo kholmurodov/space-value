@@ -24,7 +24,7 @@
                             </li>
                         </ul>
                         <a class='menu-trigger'>
-                            <span>{{ $t("menu") }}</span>
+                            <span>{{ $t("navbar.menu") }}</span>
                         </a>
                     </nav>
                 </div>

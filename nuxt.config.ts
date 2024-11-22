@@ -1,12 +1,4 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
-// export default defineNuxtConfig({
-//   compatibilityDate: '2024-04-03',
-//   devtools: { enabled: true }
-// })
-
 export default defineNuxtConfig({
-
-
   app: {
     head: {
       title: '(주)공간과가치',
@@ -23,9 +15,6 @@ export default defineNuxtConfig({
   },
 
   css: [
-    '~/assets/css/animated.css',
-    '~/assets/css/templatemo-space-dynamic.css',
-    '~/assets/css/owl.css',
     '~/assets/styles/main.scss',
   ],
 
@@ -69,7 +58,7 @@ export default defineNuxtConfig({
 
   fontawesome: {
     icons: {
-      solid: ['phone', 'calendar', 'user', 'folder'],
+      solid: ['phone', 'calendar', 'user', 'folder', "pen-to-square", "message", "clock"],
     }
   },
 

@@ -1,18 +1,10 @@
 <template>
-    <!-- Main Section -->
     <main>
-        <div id="blog" class="our-blog section">
+        <div class="our-blog section">
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-6 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.25s">
-                        <div class="section-heading">
-                            <h2>Check Out What Is <em>Trending</em> In Our Latest <span>News</span></h2>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.25s">
-                        <div class="top-dec">
-                            <img src="assets/images/blog-dec.png" alt="">
-                        </div>
+                <div class="wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.25s">
+                    <div class="section-heading">
+                        <h2>Check Out What Is <em>Trending</em> In Our Latest <span>News</span></h2>
                     </div>
                 </div>
                 <div class="row">
@@ -24,17 +16,17 @@
                                     <span><font-awesome :icon="['fas', 'calendar']" />
                                         <span class="date">{{ formatDate(blog.createdAt) }}</span>
                                     </span>
-                                    <a href="#">
+                                    <nuxt-link :to="'/blogs/' + blog.id">
                                         <h4 v-html="blog.title"></h4>
-                                    </a>
+                                    </nuxt-link>
                                     <p>{{ blog.description }}</p>
                                 </div>
                                 <div class="right-image col-lg-3 wow fadeInUp" data-wow-duration="1s"
                                     data-wow-delay="0.25s">
-                                    <a href="#">
+                                    <nuxt-link :to="'/blogs/' + blog.id">
                                         <img v-if="blog.image" :src="blog.image" :alt="blog.title">
                                         <img v-else src="/assets/images/blog.jpg" :alt="blog.title">
-                                    </a>
+                                    </nuxt-link>
                                 </div>
                             </li>
                         </ul>
@@ -46,10 +38,8 @@
 </template>
 
 <script setup lang="ts">
-const { setLocale, localeProperties } = useI18n();
-
 const store = useBlogStore();
-const { latest, blogs } = store;
+const { blogs } = store;
 
 function formatDate(date: Date) {
     var d = new Date(date),
