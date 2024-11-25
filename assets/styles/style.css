@@ -177,6 +177,31 @@ input[type="tel"]:focus {
   border-radius: 4px;
 }
 
+.btn-round:hover {
+  background-color: #03a4ed;
+  color: #fff;
+}
+
+.btn-delete {
+  border-radius: 4px;
+  background: #f85959;
+  color: #fff;
+  border-color: none;
+  border: none;
+}
+
+.btn-flex {
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.btn-edit button {
+  margin-right: 5px;
+}
+
+
 .btn-round-full {
   border-radius: 50px;
 }

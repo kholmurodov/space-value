@@ -31,10 +31,16 @@
                                             <img class="img-fluid rounded" v-else src="/assets/images/blog.jpg"
                                                 :alt="blog?.title">
 
-                                            <div class="blog-item-content bg-white p-5">
-                                                <div class="blog-item-meta bg-gray py-1 px-2">
+                                            <div class="blog-item-content bg-white p-5 X">
+                                                <div class="blog-item-meta bg-gray py-1 px-2 btn-flex">
                                                     <span class="text-black text-capitalize mr-3">
-                                                        <font-awesome :icon="['fas', 'clock']" /> 28th January
+                                                        <font-awesome :icon="['fas', 'clock']" />
+                                                        {{ $formatDate(blog?.createdAt) }}
+                                                    </span>
+
+                                                    <span class="btn-edit">
+                                                        <button class="btn-solid-border btn-round  ">Edit</button>
+                                                        <button class="btn-delete b ">Delete</button>
                                                     </span>
                                                 </div>
                                                 <p>{{ blog?.description }}</p>
@@ -55,10 +61,8 @@
                             </div>
                             <div class="col-lg-4">
                                 <div class="sidebar-wrap">
-                                    <div class="sidebar-widget latest-post card border-0 p-4 mb-3">
-                                        <h5>Latest Posts</h5>
-
-
+                                    <div class="sidebar-widget latest-post border-0 p-4 py-0 mb-3">
+                                        <h5><b>Latest Posts</b></h5>
                                         <div class="media border-bottom py-3" v-for="blog in latest5">
                                             <a href="#">
                                                 <img class="mr-4" v-if="blog?.image" :src="blog?.image"
@@ -78,7 +82,6 @@
 
                                     <div class="sidebar-widget bg-white rounded tags p-4 mb-3">
                                         <h5 class="mb-4">Tags</h5>
-
                                         <div class="d-inline-block" v-for="tag in store.tags" :key="tag">
                                             <a class="mr-1" href="#">{{ tag }}</a>
                                         </div>

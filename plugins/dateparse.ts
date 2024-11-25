@@ -1,7 +1,8 @@
 export default defineNuxtPlugin(() => {
     return {
         provide: {
-            formatDate: (date: Date) => {
+            formatDate: (date?: Date) => {
+                if (!date) return '';
                 var d = new Date(date),
                     month = '' + (d.getMonth() + 1),
                     day = '' + d.getDate(),

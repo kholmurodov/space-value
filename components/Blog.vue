@@ -74,5 +74,3 @@
 const store = useBlogStore();
 const { latest, blogs } = store;
 </script>
-
-<style lang="scss" scoped></style>
