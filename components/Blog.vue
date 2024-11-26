@@ -16,10 +16,10 @@
             <div class="row">
                 <div class="col-lg-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.25s" v-if="latest">
                     <div class="left-image">
-                        <a href="#">
+                        <nuxt-link :to="'/blogs/' + latest.id">
                             <img v-if="latest.image" :src="latest.image" :alt="latest.title">
                             <img v-else src="/assets/images/big-blog-thumb.jpg" :alt="latest.title">
-                        </a>
+                        </nuxt-link>
                         <div class="info">
                             <div class="inner-content">
                                 <ul>
@@ -31,9 +31,9 @@
                                         <span><font-awesome :icon="['fas', 'user']" /> </span>{{ tag }}
                                     </li>
                                 </ul>
-                                <a href="#">
+                                <nuxt-link :to="'/blogs/' + latest.id">
                                     <h4 v-html="latest.title"></h4>
-                                </a>
+                                </nuxt-link>
                                 <p>{{ latest.description }}</p>
                                 <div class="main-blue-button">
                                     <nuxt-link to="/blogs">{{ $t("blogs.more") }}</nuxt-link>
@@ -50,16 +50,16 @@
                                     <span><font-awesome :icon="['fas', 'calendar']" />
                                         <span class="date">{{ $formatDate(blog.createdAt) }}</span>
                                     </span>
-                                    <a href="#">
+                                    <nuxt-link :to="'/blogs/' + blog.id">
                                         <h4 v-html="blog.title"></h4>
-                                    </a>
+                                    </nuxt-link>
                                     <p>{{ blog.description }}</p>
                                 </div>
                                 <div class="right-image">
-                                    <a href="#">
+                                    <nuxt-link :to="'/blogs/' + blog.id">
                                         <img v-if="blog.image" :src="blog.image" :alt="blog.title">
                                         <img v-else src="/assets/images/blog.jpg" :alt="blog.title">
-                                    </a>
+                                    </nuxt-link>
                                 </div>
                             </li>
                         </ul>

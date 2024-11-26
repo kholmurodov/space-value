@@ -5,14 +5,14 @@
                 <section class="page-title bg-1">
                     <div class="container">
                         <div class="block text-center">
-                            <h1 class="text-capitalize mb-4 text-lg text-white" v-html="blog?.title"></h1>
+                            <h1 class="text-capitalize mb-4 text-lg text-white" v-html="blog.title"></h1>
                             <ul class="list-inline">
                                 <li class="list-inline-item">
                                     <NuxtLink to="/" class="text-white">Home</NuxtLink>
                                 </li>
                                 <li class="list-inline-item"><span class="text-white-50">/</span></li>
                                 <li class="list-inline-item">
-                                    <span class="text-white-50" v-html="blog?.title"></span>
+                                    <span class="text-white-50" v-html="blog.title"></span>
                                 </li>
                             </ul>
                         </div>
@@ -26,28 +26,31 @@
                                 <div class="row">
                                     <div class="col-lg-12 mb-5">
                                         <div class="single-blog-item">
-                                            <img class="img-fluid rounded" v-if="blog?.image" :src="blog?.image"
-                                                :alt="blog?.title">
+                                            <img class="img-fluid rounded" v-if="blog.image" :src="blog.image"
+                                                :alt="blog.title">
                                             <img class="img-fluid rounded" v-else src="/assets/images/blog.jpg"
-                                                :alt="blog?.title">
+                                                :alt="blog.title">
 
-                                            <div class="blog-item-content bg-white p-5 X">
-                                                <div class="blog-item-meta bg-gray py-1 px-2 btn-flex">
-                                                    <span class="text-black text-capitalize mr-3">
-                                                        <font-awesome :icon="['fas', 'clock']" />
-                                                        {{ $formatDate(blog?.createdAt) }}
-                                                    </span>
+                                            <div class="blog-item-meta bg-gray py-1 px-2 bg-white mt-1 btn-flex">
+                                                <span class="text-black text-capitalize mr-3">
+                                                    <font-awesome :icon="['fas', 'clock']" />
+                                                    {{ $formatDate(blog.createdAt) }}
+                                                </span>
 
-                                                    <span class="btn-edit">
-                                                        <button class="btn-solid-border btn-round  ">Edit</button>
-                                                        <button class="btn-delete b ">Delete</button>
-                                                    </span>
+                                                <div class="float-right">
+                                                    <nuxt-link :to="'/blogs/edit/' + blog.id"
+                                                        class="btn btn-outline-primary btn-sm mx-2">Edit</nuxt-link>
+                                                    <button type="button"
+                                                        class="btn btn-outline-danger btn-sm">Delete</button>
                                                 </div>
-                                                <p>{{ blog?.description }}</p>
+                                            </div>
 
-                                                <div class="tag-option mt-5 clearfix" v-if="blog?.tags?.length">
+                                            <div class="blog-item-content mt-2">
+                                                <pre v-html="blog.blog"></pre>
+
+                                                <div class="tag-option mt-5 clearfix" v-if="blog.tags?.length">
                                                     <h4>Tags:</h4>
-                                                    <ul v-for="tag in blog?.tags" :key="tag"
+                                                    <ul v-for="tag in blog.tags" :key="tag"
                                                         class="float-left list-inline">
                                                         <li class="list-inline-item">
                                                             <a href="#" rel="tag">{{ tag }}</a>
@@ -65,16 +68,15 @@
                                         <h5><b>Latest Posts</b></h5>
                                         <div class="media border-bottom py-3" v-for="blog in latest5">
                                             <a href="#">
-                                                <img class="mr-4" v-if="blog?.image" :src="blog?.image"
-                                                    :alt="blog?.image">
+                                                <img class="mr-4" v-if="blog.image" :src="blog.image" :alt="blog.image">
                                                 <img class="mr-4" v-else src="/assets/images/blog.jpg"
-                                                    :alt="blog?.title"></a>
+                                                    :alt="blog.title"></a>
                                             <div class="media-body ml-3">
                                                 <h6 class="my-2">
-                                                    <a href="#" v-html="blog?.title"></a>
+                                                    <a href="#" v-html="blog.title"></a>
                                                 </h6>
                                                 <span class="text-sm text-muted">
-                                                    {{ $formatDate(blog?.createdAt) }}
+                                                    {{ $formatDate(blog.createdAt) }}
                                                 </span>
                                             </div>
                                         </div>
@@ -97,11 +99,16 @@
 </template>
 
 <script setup lang="ts">
-
 const route = useRoute();
 const { id } = route.params;
 
 const store = useBlogStore();
 const { getBlog, latest5 } = store;
 const blog = getBlog(id as string);
+
+if (!blog) {
+    throw new Error("Blog Not Found");
+}
 </script>
+
+<style lang="scss" scoped></style>

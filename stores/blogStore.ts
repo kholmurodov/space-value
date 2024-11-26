@@ -3,6 +3,7 @@ type BlogType = {
     title: string;
     image?: string;
     description?: string;
+    blog?: string;
     createdAt: Date;
     tags?: string[];
 }
@@ -20,6 +21,7 @@ export const useBlogStore = defineStore('blog', {
                 title: 'New Websites &amp; Backlinks',
                 image: '',
                 description: 'Lorem ipsum dolor sit amet, consectetur and sed doer ket eismod tempor incididunt ut labore et dolore magna...',
+                blog: 'Lorem ipsum dolor sit amet, consectetur and sed doer ket eismod tempor incididunt ut labore et dolore magna...',
                 createdAt: new Date()
             },
             {
@@ -27,6 +29,7 @@ export const useBlogStore = defineStore('blog', {
                 title: 'SEO Analysis &amp; Content Ideas',
                 image: 'https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=800',
                 description: 'Lorem ipsum dolor sit amet, consectetur and sed doer ket eismod tempor incididunt ut labore et dolore magna...',
+                blog: 'Lorem ipsum dolor sit amet, consectetur and sed doer ket eismod tempor incididunt ut labore et dolore magna...',
                 createdAt: new Date()
             },
             {
@@ -34,6 +37,7 @@ export const useBlogStore = defineStore('blog', {
                 title: 'SEO Tips &amp; Digital Marketing',
                 image: '',
                 description: 'Lorem ipsum dolor sit amet, consectetur and sed doer ket eismod tempor incididunt ut labore et dolore magna...',
+                blog: 'Lorem ipsum dolor sit amet, consectetur and sed doer ket eismod tempor incididunt ut labore et dolore magna...',
                 createdAt: new Date()
             },
         ],

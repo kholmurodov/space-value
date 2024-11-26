@@ -20,7 +20,9 @@ export default defineNuxtConfig({
 
   ssr: false,
 
-  plugins: [],
+  plugins: [
+    '~/plugins/ckeditor.ts'
+  ],
 
   $production: {
     routeRules: {
@@ -38,7 +40,9 @@ export default defineNuxtConfig({
     }
   },
 
+
   modules: ['@vesp/nuxt-fontawesome', '@nuxtjs/i18n', '@pinia/nuxt'],
+
   i18n: {
     // Module Options
     lazy: true,

@@ -19,6 +19,7 @@
         "sendBtn": "Send Message"
     },
     "blogs": {
-        "more": "More"
+        "more": "More",
+        "save": "Save"
     }
 }
