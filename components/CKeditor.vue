@@ -1,10 +1,7 @@
 <template>
-    <div class="container mx-auto max-w-4xl my-8">
+    <div class="container max-w-4xl mb-5 p-0">
         <section>
-            <div v-if="editor"
-                class="btn d-flex align-items-center flex-fill flex-wrap g-col-4 border border-primary p-4">
-                <ckeditor :editor="editor" />
-            </div>
+            <ckeditor :editor="editor" />
         </section>
     </div>
 </template>
