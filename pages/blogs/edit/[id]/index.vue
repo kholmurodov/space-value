@@ -1,7 +1,7 @@
 <template>
     <main>
         <div class="container our-blog section py-0">
-            <div class="bg-body-secondary ">
+            <div class="bg-body-secondary">
                 <h3 class="p-2 text-center">
                     Edit Blog
                 </h3>
