@@ -12,8 +12,18 @@
                 </div>
                 <div class="col-lg-9">
                     <div class="input-group">
-                        <input type="text" class="form-control" placeholder="Please Enter a Title" aria-label="Title"
-                            aria-describedby="basic-addon1" v-model="blog.title">
+                        <input type="text" class="form-control" placeholder="Please Enter a Title" v-model="blog.title">
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-lg-3">
+                    <h5>Description</h5>
+                </div>
+                <div class="col-lg-9">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Please Enter a Description"
+                            v-model="blog.description">
                     </div>
                 </div>
             </div>
@@ -23,15 +33,14 @@
                 </div>
                 <div class="col-lg-9">
                     <div class="input-group">
-                        <input type="file" class="form-control" id="inputGroupFile02">
-                        <label class="input-group-text" for="inputGroupFile02">Upload</label>
+                        <input type="file" class="form-control" id="blog-file">
+                        <label class="input-group-text" for="blog-file">Upload</label>
                     </div>
                 </div>
             </div>
-
             <div class="row mt-3">
                 <div class="col-lg-3">
-                    <h5>Description</h5>
+                    <h5>Content</h5>
                 </div>
                 <div class="col-lg-9">
                     <div class="container max-w-4xl mb-5 p-0">

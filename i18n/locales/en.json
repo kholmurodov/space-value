@@ -20,6 +20,7 @@
     },
     "blogs": {
         "more": "More",
-        "save": "Save"
+        "save": "Save",
+        "cancel": "Cancel"
     }
 }
