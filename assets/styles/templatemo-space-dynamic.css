@@ -260,12 +260,12 @@ body {
     line-height: 44px;
 }
 
-.section-heading h2 em {
+.section-heading h3 em {
     font-style: normal;
     color: #03a4ed;
 }
 
-.section-heading h2 span {
+.section-heading h3 span {
     /* color: #154abd; */
     color: #03a4ed;
 
@@ -982,12 +982,12 @@ Banner Style
     line-height: 72px;
 }
 
-.main-banner .left-content h2 em {
+.main-banner .left-content h3 em {
     color: #03a4ed;
     font-style: normal;
 }
 
-.main-banner .left-content h2 span {
+.main-banner .left-content h3 span {
     color: #03a4ed;
 }
 
@@ -1084,6 +1084,7 @@ About Us Style
 }
 
 .about-us .services .item p {
+    padding-left: 6rem;
     color: #fff;
 }
 
@@ -1427,8 +1428,8 @@ contact
 }
 
 .contact-us .section-heading h2,
-.contact-us .section-heading h2 em,
-.contact-us .section-heading h2 span {
+.contact-us .section-heading h3 em,
+.contact-us .section-heading h3 span {
     color: #fff;
 }
 

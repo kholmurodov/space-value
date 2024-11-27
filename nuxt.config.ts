@@ -2,7 +2,7 @@ export default defineNuxtConfig({
   app: {
     head: {
       title: '(주)공간과가치',
-      link: [{ rel: 'icon', type: 'image/png', href: "/icon.png" }],
+      link: [{ rel: 'icon', type: 'image/png', href: "/icon.jpg" }],
 
       script: [
         { 'src': '/js/jquery.min.js', tagPosition: 'bodyClose' },

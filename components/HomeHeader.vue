@@ -36,5 +36,3 @@
 <script setup lang="ts">
 const { setLocale, localeProperties } = useI18n();
 </script>
-
-<style scoped></style>
