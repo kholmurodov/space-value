@@ -1,60 +1,53 @@
 <template>
     <main>
-        <div class="container our-blog section pt-0">
+        <div class="container our-blog section py-0">
             <div class="bg-body-secondary ">
-                <h1 class="p-5">
-                    Blog Details
-                </h1>
+                <h3 class="p-2 text-center">
+                    Edit Blog
+                </h3>
             </div>
-            <div class="px-10 mt-5">
-                <div class="d-flex">
-                    <div class="col-lg-3">
-                        <h2>Title</h2>
-                    </div>
-                    <div class="col-lg-9">
-                        <div class="input-group input-group-lg mb-3">
-                            <input type="text" class="form-control" placeholder="Please Enter a Title"
-                                aria-label="Title" aria-describedby="basic-addon1" v-model="blog.title">
-                        </div>
-                    </div>
-
+            <div class="row mt-3">
+                <div class="col-lg-3">
+                    <h5>Title</h5>
                 </div>
-                <div class="mt-3">
-                    <div class="d-flex">
-                        <div class="col-lg-3">
-                            <h2>Image</h2>
-                        </div>
-                        <div class="col-lg-9">
-                            <div class="input-group mb-3 input-group-lg ">
-                                <input type="file" class="form-control" id="inputGroupFile02">
-                                <label class="input-group-text" for="inputGroupFile02">Upload</label>
-                            </div>
-                        </div>
-
+                <div class="col-lg-9">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Please Enter a Title" aria-label="Title"
+                            aria-describedby="basic-addon1" v-model="blog.title">
                     </div>
-                    <div class="d-flex flex-row">
-                        <div class="col-lg-3">
-                            <h2>Description</h2>
-                        </div>
-                        <div class="col-lg-9">
-                            <div class="">
-                                <CKeditor class="ck-editor__editable ck-editor__editable_inline " />
-                            </div>
-                        </div>
-
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-lg-3">
+                    <h5>Image</h5>
+                </div>
+                <div class="col-lg-9">
+                    <div class="input-group">
+                        <input type="file" class="form-control" id="inputGroupFile02">
+                        <label class="input-group-text" for="inputGroupFile02">Upload</label>
                     </div>
-                    <button type="button" class="btn btn-success float-end">{{ $t("blogs.save") }}</button>
                 </div>
             </div>
 
-
+            <div class="row mt-3">
+                <div class="col-lg-3">
+                    <h5>Description</h5>
+                </div>
+                <div class="col-lg-9">
+                    <div class="container max-w-4xl mb-5 p-0">
+                        <ckeditor v-model="blog.blog" :editor="editor" />
+                    </div>
+                </div>
+            </div>
+            <div class="float-end">
+                <button type="button" class="btn btn-danger mx-3">{{ $t("blogs.cancel") }}</button>
+                <button type="button" class="btn btn-success">{{ $t("blogs.save") }}</button>
+            </div>
         </div>
     </main>
 </template>
 
-
 <script setup lang="ts">
-
 const route = useRoute();
 const { id } = route.params;
 
@@ -66,11 +59,12 @@ if (!blog) {
     throw new Error("Blog Not Found");
 }
 
-
-
+const { $ckeditor } = useNuxtApp();
+const editor = $ckeditor.classicEditor;
 </script>
-<style>
-.ck-editor__editable_inline {
-    min-height: 200px;
+
+<style lang="css">
+.ck-editor__editable {
+    min-height: 400px;
 }
 </style>

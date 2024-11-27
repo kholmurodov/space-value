@@ -1,7 +1,7 @@
 export default defineNuxtConfig({
   app: {
     head: {
-      title: '(주)공간과가치',
+      title: '㈜제이제이시스템',
       link: [{ rel: 'icon', type: 'image/png', href: "/icon.jpg" }],
 
       script: [
@@ -20,9 +20,7 @@ export default defineNuxtConfig({
 
   ssr: false,
 
-  plugins: [
-    '~/plugins/ckeditor.ts'
-  ],
+  plugins: [],
 
   $production: {
     routeRules: {
