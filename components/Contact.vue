@@ -1,57 +1,38 @@
 <template>
     <div id="contact" class="contact-us section">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-6 align-self-center wow fadeInLeft" data-wow-duration="0.5s" data-wow-delay="0.25s">
-                    <div class="section-heading">
-                        <h2>Feel Free To Send Us a Message About Your Website Needs</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doer ket eismod tempor
-                            incididunt ut labore et dolores</p>
-                        <div class="phone-info">
-                            <h4>{{ $t("contact.enquiry") }}
-                                <span><font-awesome :icon="['fas', 'phone']" /></span>
-                                <a href="#">02-6949-0901</a>
-                            </h4>
-                        </div>
+            <div class="row justify-content-center h-100">
+                <div data-wow-duration="0.5s" data-wow-delay="0.25s">
+                    <div class="section-heading text-center">
+                        <h2 class="">Partners</h2>
+                        <p>We partner with a suite of leading technology providers, platforms, and tools, so you have
+                            the right tech for now and tomorrow.</p>
+
                     </div>
                 </div>
-                <div class="col-lg-6 wow fadeInRight" data-wow-duration="0.5s" data-wow-delay="0.25s">
-                    <form id="contact" action="" method="post">
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <fieldset>
-                                    <input type="name" name="name" id="name" placeholder="Name" autocomplete="on"
-                                        required>
-                                </fieldset>
-                            </div>
-                            <div class="col-lg-6">
-                                <fieldset>
-                                    <input type="surname" name="surname" id="surname" placeholder="Surname" required>
-                                </fieldset>
-                            </div>
-                            <div class="col-lg-12">
-                                <fieldset>
-                                    <input type="text" name="email" id="email" pattern="[^ @]*@[^ @]*"
-                                        placeholder="Your Email" required>
-                                </fieldset>
-                            </div>
-                            <div class="col-lg-12">
-                                <fieldset>
-                                    <textarea name="message" type="text" class="form-control" id="message"
-                                        placeholder="Message" required></textarea>
-                                </fieldset>
-                            </div>
-                            <div class="col-lg-12">
-                                <fieldset>
-                                    <button type="submit" id="form-submit" class="main-button ">{{ $t("contact.sendBtn")
-                                        }}</button>
-                                </fieldset>
-                            </div>
-                        </div>
-                        <div class="contact-dec">
-                            <img src="assets/images/contact-decoration.png" alt="">
-                        </div>
-                    </form>
+                <div class="row align-items-center">
+                    <div class="col-lg-3"><img class="w-50" src="/assets/images/partners/국토.svg" alt="partner">
+                    </div>
+                    <div class="col-lg-3"><img src="/assets/images/partners/kdata.png" alt="partner">
+                    </div>
+                    <div class="col-lg-3"><img src="/assets/images/partners/nia.png" alt="partner">
+                    </div>
+                    <div class="col-lg-3"><img src="/assets/images/partners/ktds.png" alt="partner">
+                    </div>
+                </div>
+                <div class="row align-items-center">
+                    <div class="col col-lg-4"><img src="/assets/images/partners/nothereast.svg" alt="partner">
+                    </div>
+                    <div class="col col-lg-4"><img src="/assets/images/partners/kyujanggak.png" alt="partner">
+                    </div>
+                    <div class="col col-lg-4"><img src="/assets/images/partners/다울지.png" alt="partner"></div>
+                </div>
+                <div class="row align-items-center">
+                    <div class="col col-lg-3"><img src="/assets/images/partners/park.png" alt="partner"></div>
+                    <div class="col col-lg-3"><img src="/assets/images/partners/yes24.svg" alt="partner"></div>
+                    <div class="col col-lg-3"><img src="/assets/images/partners/mirae.png" alt="partner"></div>
+                    <div class="col col-lg-3"><img src="/assets/images/partners/emgram.png" alt="partner">
+                    </div>
                 </div>
             </div>
         </div>
