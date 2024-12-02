@@ -21,6 +21,11 @@
     "blogs": {
         "more": "More",
         "save": "Save",
-        "cancel": "Cancel"
+        "cancel": "Cancel",
+        "partners": "Partners"
+    },
+    "partners": {
+        "partners": "partners",
+        "slogan": "We partner with a suite of leading technology providers, platforms, and tools, so you have the right tech for now and tomorrow."
     }
 }
