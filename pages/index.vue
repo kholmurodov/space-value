@@ -1,17 +1,16 @@
 <template>
-    <Hero />
-    <AboutUs />
-    <OurServices />
-    <Portfolio />
-    <Blog />
-    <Contact />
+  <Hero />
+  <AboutUs />
+  <OurServices />
+  <Portfolio />
+  <Blog />
+  <Partners />
 </template>
 
 <script lang="ts" setup>
 definePageMeta({
-    layout: "home"
+  layout: "home",
 });
 </script>
-
 
 <style scoped></style>
