@@ -55,10 +55,8 @@
 
 <style scoped>
 aside {
-  background: #fcfcfc;
   padding: 8px 15px 0 15px;
   margin: 0 0 0px 0;
-  border: 1px solid #e6e6e6;
   -webkit-box-shadow: 0 2px 0 rgba(0, 0, 0, 0.03);
   -moz-box-shadow: 0 2px 0 rgba(0, 0, 0, 0.03);
   box-shadow: 0 2px 0 rgba(0, 0, 0, 0.03);
