@@ -14,11 +14,13 @@
                         <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.3s">
                             <div class="hidden-content">
                                 <h4>{{ offer.title }}</h4>
-                                <p>{{ offer.description }}</p>
+                                <!-- <p>{{ offer.description }}</p> -->
                             </div>
                             <div class="showed-content">
                                 <img v-if="offer.image" :src="offer.image" :alt="offer.title">
                                 <img v-else src="assets/images/portfolio-image.png" :alt="offer.title">
+
+
                             </div>
                         </div>
                     </a>

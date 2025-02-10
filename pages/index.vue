@@ -3,7 +3,7 @@
   <AboutUs />
   <OurServices />
   <Portfolio />
-  <Blog />
+  <!-- <Blog /> -->
   <Partners />
 </template>
 

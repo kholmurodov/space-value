@@ -1,22 +1,20 @@
 export default defineNuxtConfig({
   app: {
     head: {
-      title: '㈜제이제이시스템',
-      link: [{ rel: 'icon', type: 'image/png', href: "/icon.jpg" }],
+      title: "㈜제이제이시스템",
+      link: [{ rel: "icon", type: "image/png", href: "/icon.jpg" }],
 
       script: [
-        { 'src': '/js/jquery.min.js', tagPosition: 'bodyClose' },
-        { 'src': '/js/owl-carousel.js', tagPosition: 'bodyClose' },
-        { 'src': '/js/animation.js', tagPosition: 'bodyClose' },
-        { 'src': '/js/imagesloaded.js', tagPosition: 'bodyClose' },
-        { 'src': '/js/templatemo-custom.js', tagPosition: 'bodyClose' },
+        { src: "/js/jquery.min.js", tagPosition: "bodyClose" },
+        { src: "/js/owl-carousel.js", tagPosition: "bodyClose" },
+        { src: "/js/animation.js", tagPosition: "bodyClose" },
+        { src: "/js/imagesloaded.js", tagPosition: "bodyClose" },
+        { src: "/js/templatemo-custom.js", tagPosition: "bodyClose" },
       ],
     },
   },
 
-  css: [
-    '~/assets/styles/main.scss',
-  ],
+  css: ["~/assets/styles/main.scss"],
 
   ssr: false,
 
@@ -24,8 +22,8 @@ export default defineNuxtConfig({
 
   $production: {
     routeRules: {
-      '/**': { isr: true }
-    }
+      "/**": { isr: true },
+    },
   },
 
   $development: {
@@ -34,12 +32,11 @@ export default defineNuxtConfig({
 
   $env: {
     staging: {
-      // 
-    }
+      //
+    },
   },
 
-
-  modules: ['@vesp/nuxt-fontawesome', '@nuxtjs/i18n', '@pinia/nuxt'],
+  modules: ["@vesp/nuxt-fontawesome", "@nuxtjs/i18n", "@pinia/nuxt"],
 
   i18n: {
     // Module Options
@@ -49,7 +46,7 @@ export default defineNuxtConfig({
     defaultLocale: "kr", // Default Language
     detectBrowserLanguage: {
       useCookie: true,
-      alwaysRedirect: true
+      alwaysRedirect: true,
     },
     locales: [
       { code: "kr", iso: "kr-KR", file: "kr.json" },
@@ -59,9 +56,17 @@ export default defineNuxtConfig({
 
   fontawesome: {
     icons: {
-      solid: ['phone', 'calendar', 'user', 'folder', "pen-to-square", "message", "clock"],
-    }
+      solid: [
+        "phone",
+        "calendar",
+        "user",
+        "folder",
+        "pen-to-square",
+        "message",
+        "clock",
+      ],
+    },
   },
 
-  compatibilityDate: '2024-11-19'
-})
+  compatibilityDate: "2024-11-19",
+});
