@@ -14,6 +14,7 @@ export default defineNuxtConfig({
     },
   },
 
+
   css: [
     '~/assets/styles/main.scss',
   ],
@@ -62,6 +63,14 @@ export default defineNuxtConfig({
       solid: ['phone', 'calendar', 'user', 'folder', "pen-to-square", "message", "clock"],
     }
   },
+
+  runtimeConfig: {
+    public: {
+      apiBase: 'http://localhost:8080/api',
+    }
+  },
+
+
 
   compatibilityDate: '2024-11-19'
 })

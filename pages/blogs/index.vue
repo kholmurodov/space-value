@@ -10,11 +10,11 @@
                 <div class="row">
                     <div class="right-list">
                         <ul>
-                            <li v-for="blog in blogs" :key="blog.id">
+                            <li v-for="blog in store" :key="blog.id">
                                 <div class="left-content align-self-center col-lg-9 wow fadeInUp" data-wow-duration="1s"
                                     data-wow-delay="0.25s">
                                     <span><font-awesome :icon="['fas', 'calendar']" />
-                                        <span class="date">{{ $formatDate(blog.createdAt) }}</span>
+                                        <span class="date">{{ $formatDate() }}</span>
                                     </span>
                                     <nuxt-link :to="'/blogs/' + blog.id">
                                         <h4 v-html="blog.title"></h4>
@@ -39,7 +39,8 @@
 
 <script setup lang="ts">
 const store = useBlogStore();
-const { blogs } = store;
+
+
 </script>
 
 <style lang="scss" scoped></style>

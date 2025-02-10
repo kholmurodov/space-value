@@ -9,16 +9,16 @@
                     </div>
                 </div>
                 <div class="row align-items-center">
-                    <div class="col-lg-3">
+                    <div class="col col-lg-3">
                         <img src="/assets/images/partners/molit.svg" alt="partner">
                     </div>
-                    <div class="col-lg-3">
+                    <div class="col col-lg-3">
                         <img src="/assets/images/partners/kdata.png" alt="partner">
                     </div>
-                    <div class="col-lg-3">
+                    <div class="col col-lg-3">
                         <img src="/assets/images/partners/nia.png" alt="partner">
                     </div>
-                    <div class="col-lg-3">
+                    <div class="col col-lg-3">
                         <img src="/assets/images/partners/ktds.png" alt="partner">
                     </div>
                 </div>

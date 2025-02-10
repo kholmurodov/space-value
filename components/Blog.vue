@@ -72,5 +72,6 @@
 
 <script setup lang="ts">
 const store = useBlogStore();
-const { latest, blogs } = store;
+const { latest, blogs, loadBlogs } = store;
+loadBlogs();
 </script>

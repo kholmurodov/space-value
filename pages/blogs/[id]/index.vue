@@ -84,7 +84,7 @@
 
                                     <div class="sidebar-widget bg-white rounded tags p-4 mb-3">
                                         <h5 class="mb-4">Tags</h5>
-                                        <div class="d-inline-block" v-for="tag in store.tags" :key="tag">
+                                        <div class="d-inline-block" v-for="tag in BlogService.getBlog" :key="tag">
                                             <a class="mr-1" href="#">{{ tag }}</a>
                                         </div>
                                     </div>
@@ -99,6 +99,8 @@
 </template>
 
 <script setup lang="ts">
+import BlogService from '~/services/blog-service';
+
 const route = useRoute();
 const { id } = route.params;
 

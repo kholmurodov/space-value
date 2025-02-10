@@ -12,7 +12,8 @@
                 </div>
                 <div class="col-lg-9">
                     <div class="input-group">
-                        <input type="text" class="form-control" placeholder="Please Enter a Title" v-model="blog.title">
+                        <input type="text" class="form-control" placeholder="Please Enter a Title"
+                            v-model="BlogService.getBlog">
                     </div>
                 </div>
             </div>
@@ -22,8 +23,7 @@
                 </div>
                 <div class="col-lg-9">
                     <div class="input-group">
-                        <input type="text" class="form-control" placeholder="Please Enter a Description"
-                            v-model="blog.description">
+                        <input type="text" class="form-control" placeholder="Please Enter a Description" v-model="blog">
                     </div>
                 </div>
             </div>
@@ -57,16 +57,14 @@
 </template>
 
 <script setup lang="ts">
+import BlogService from '~/services/blog-service';
 const route = useRoute();
 const { id } = route.params;
 
-const store = useBlogStore();
-const { getBlog } = store;
-const blog = getBlog(id as string);
 
-if (!blog) {
-    throw new Error("Blog Not Found");
-}
+const blog = new BlogService();
+
+
 
 const { $ckeditor } = useNuxtApp();
 const editor = $ckeditor.classicEditor;
