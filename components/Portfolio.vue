@@ -9,7 +9,7 @@
                 </div>
             </div>
             <div class="row">
-                <div v-for="offer in offers" :key="offer.title" class="col-lg-3 col-sm-6">
+                <div v-for="offer in offers" :key="offer.title" class="col-lg-3 col-sm-6 mb-5">
                     <a href="#">
                         <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.3s">
                             <div class="hidden-content">
