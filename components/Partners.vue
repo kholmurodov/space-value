@@ -4,8 +4,8 @@
       <div class="container">
         <div class="row justify-content-md-center">
           <div class="col-12 col-md-10 col-lg-8 col-xl-7 col-xxl-6">
-            <h2 class="mb-4 display-5 text-center">
-              Trusted by over 786+ clients.
+            <h2 class="mb-4 display-6 text-center">
+              {{ $t("partners.title") }}
             </h2>
             <p class="fs-5 mb-5 text-center">
               {{ $t("partners.slogan") }}
