@@ -8,7 +8,7 @@
                             <h1 class="text-capitalize mb-4 text-lg text-white" v-html="project.title"></h1>
                             <ul class="list-inline">
                                 <li class="list-inline-item">
-                                    <NuxtLink to="/" class="text-white">Title</NuxtLink>
+                                    <nuxt-link to="/" class="text-white">Home</nuxt-link>
                                 </li>
                                 <li class="list-inline-item"><span class="text-white-50">/</span></li>
                                 <li class="list-inline-item">
@@ -88,8 +88,9 @@ const route = useRoute();
 const { id } = route.params;
 
 const store = useProjectStore();
-const { getProject, latest5 } = store;
+const { getProject, getLatest } = store;
 const project = getProject(id as string);
+const latest5 = getLatest(id as string)
 
 if (!project) {
     throw new Error("Project Not Found");
