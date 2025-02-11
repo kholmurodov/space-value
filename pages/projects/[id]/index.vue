@@ -22,53 +22,67 @@
                 <section class="section blog-wrap bg-gray pt-5">
                     <div class="container">
                         <div class="row">
-                            <div class="col-lg-8">
-                                <div class="row">
-                                    <div class="col-lg-12 mb-5">
-                                        <div class="single-blog-item">
+                            <div class="col-lg-8 mb-5">
+                                <div class="single-blog-item bg-white">
 
-                                            <div class="blog-item-meta bg-gray py-1 px-2 bg-white mt-1 btn-flex">
-                                                <span class="text-black text-capitalize mr-3">
-                                                    <p> &nbsp {{ project.description }}</p>
-                                                </span>
-                                            </div>
+                                    <div class="blog-item-meta py-1 px-2 mt-1 btn-flex">
+                                        <span class="text-black text-capitalize mr-3">
+                                            <p>{{ project.description }}</p>
+                                        </span>
+                                    </div>
 
-                                            <img class="img-fluid rounded" :src="project.image" :alt="project.title">
+                                    <div class="blog-item-meta py-2 px-2 mt-2 btn-flex">
+                                        <img class="img-fluid rounded" :src="project.image" :alt="project.title">
+                                    </div>
 
-                                            <div class="blog-item-meta bg-gray py-1 px-2 bg-white mt-1 btn-flex">
-                                                <table class="table">
-                                                    <tbody>
-                                                        <tr>
-                                                            <th scope="row">발주처
-                                                            </th>
-                                                            <td>다울지오인포
-                                                            </td>
+                                    <div class="blog-item-meta py-2 px-2 mt-2 btn-flex">
+                                        <table class="table">
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">발주처</th>
+                                                    <td>{{ project.client }}
+                                                    </td>
 
-                                                        </tr>
-                                                        <tr>
-                                                            <th scope="row">OS</th>
-                                                            <td>Window Server 2008/AIX
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <th scope="row">개발기술</th>
-                                                            <td colspan="2">IIS/WebLogic/ORACLE
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <th scope="row">사용기술</th>
-                                                            <td colspan="2">Struts1/JAVA/JSP
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <th scope="row">기타</th>
-                                                            <td colspan="2">Struts1/JAVA/JSP
-                                                            </td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                        </div>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">OS</th>
+                                                    <td>{{ project.os }}
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">개발기술</th>
+                                                    <td colspan="2">{{ project.technology }}
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">사용기술</th>
+                                                    <td colspan="2">{{ project.develop }}
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">기타</th>
+                                                    <td rowspan="4">
+                                                        <ul class="px-0">
+                                                            <li>
+                                                                3,000여 창고업체 정보 수집 및 DB 구축
+                                                            </li>
+                                                            <li>
+                                                                견적, 역경매, 계약서 작성 지원
+                                                            </li>
+                                                            <li>
+                                                                물류직거래장터 OPEN API
+                                                            </li>
+                                                            <li>
+                                                                전자서명/결제/전자세금계산서 솔루션도입
+                                                            </li>
+                                                            <li>
+                                                                웹앱 제작 및 DAUM MAP 적용
+                                                            </li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
                                     </div>
                                 </div>
                             </div>
