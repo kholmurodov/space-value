@@ -26,11 +26,47 @@
                                 <div class="row">
                                     <div class="col-lg-12 mb-5">
                                         <div class="single-blog-item">
-                                            <img class="img-fluid rounded" :src="project.image" :alt="project.title">
+
                                             <div class="blog-item-meta bg-gray py-1 px-2 bg-white mt-1 btn-flex">
                                                 <span class="text-black text-capitalize mr-3">
-                                                    <p>{{ project.description }}</p>
+                                                    <p> &nbsp {{ project.description }}</p>
                                                 </span>
+                                            </div>
+
+                                            <img class="img-fluid rounded" :src="project.image" :alt="project.title">
+
+                                            <div class="blog-item-meta bg-gray py-1 px-2 bg-white mt-1 btn-flex">
+                                                <table class="table">
+                                                    <tbody>
+                                                        <tr>
+                                                            <th scope="row">발주처
+                                                            </th>
+                                                            <td>다울지오인포
+                                                            </td>
+
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">OS</th>
+                                                            <td>Window Server 2008/AIX
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">개발기술</th>
+                                                            <td colspan="2">IIS/WebLogic/ORACLE
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">사용기술</th>
+                                                            <td colspan="2">Struts1/JAVA/JSP
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">기타</th>
+                                                            <td colspan="2">Struts1/JAVA/JSP
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
                                             </div>
                                         </div>
                                     </div>
