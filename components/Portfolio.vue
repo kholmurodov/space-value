@@ -10,7 +10,7 @@
             </div>
             <div class="row">
                 <div v-for="offer in offers" :key="offer.title" class="col-lg-3 col-sm-6 mb-5">
-                    <a href="#">
+                    <nuxt-link to="/projects/">
                         <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.3s">
                             <div class="hidden-content">
                                 <h4>{{ offer.title }}</h4>
@@ -23,7 +23,7 @@
 
                             </div>
                         </div>
-                    </a>
+                    </nuxt-link>
                 </div>
             </div>
         </div>

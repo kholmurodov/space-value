@@ -4,7 +4,8 @@
             <div class="container">
                 <div class="wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.25s">
                     <div class="section-heading">
-                        <h2>Check Out What Is <em>Trending</em> In Our Latest <span>News</span></h2>
+                        <h2>See What Our Agency <em>Offers</em> &amp; What We <span>Provide</span></h2>
+
                     </div>
                 </div>
                 <div class="row">
