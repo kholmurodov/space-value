@@ -1192,7 +1192,7 @@ Portfolio
 .our-portfolio .section-heading h2 {
     text-align: center;
     margin: 0px 90px 0px 90px;
-    margin-bottom: 120px;
+    margin-bottom: 100px;
     position: relative;
     z-index: 1;
 }
@@ -1202,7 +1202,7 @@ Portfolio
 }
 
 .our-portfolio .item:hover .hidden-content {
-    top: -100px;
+    top: -50px;
     opacity: 1;
     visibility: visible;
 }
@@ -1226,6 +1226,7 @@ Portfolio
     position: absolute;
     z-index: 2;
     transition: all 0.5s;
+    width: 100%;
 }
 
 .our-portfolio .hidden-content:after {

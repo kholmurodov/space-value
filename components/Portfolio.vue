@@ -4,23 +4,20 @@
             <div class="row">
                 <div class="col-lg-6 offset-lg-3">
                     <div class="section-heading  wow bounceIn" data-wow-duration="1s" data-wow-delay="0.2s">
-                        <h2>See What Our Agency <em>Offers</em> &amp; What We <span>Provide</span></h2>
+                        <h2 class="projects-title">보유 기술 소개</h2>
                     </div>
                 </div>
             </div>
             <div class="row">
-                <div v-for="offer in offers" :key="offer.title" class="col-lg-3 col-sm-6 mb-5">
-                    <nuxt-link to="/projects/">
+                <div v-for="project in projects" :key="project.id" class="col-lg-3 col-sm-6 mb-5">
+                    <nuxt-link :to="`/projects/${project.id}`">
                         <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.3s">
                             <div class="hidden-content">
-                                <h4>{{ offer.title }}</h4>
-                                <!-- <p>{{ offer.description }}</p> -->
+                                <h4>{{ project.title }}</h4>
                             </div>
                             <div class="showed-content">
-                                <img v-if="offer.image" :src="offer.image" :alt="offer.title">
-                                <img v-else src="assets/images/portfolio-image.png" :alt="offer.title">
-
-
+                                <img v-if="project.image" :src="project.image" :alt="project.title">
+                                <img v-else src="assets/images/portfolio-image.png" :alt="project.title">
                             </div>
                         </div>
                     </nuxt-link>
@@ -31,7 +28,12 @@
 </template>
 
 <script setup lang="ts">
-const store = useOfferStore();
-const { offers } = store;
-
+const store = useProjectStore();
+const { projects } = store;
 </script>
+
+<style lang="css" scoped>
+.projects-title {
+    font-size: 2.5rem;
+}
+</style>
