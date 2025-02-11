@@ -16,8 +16,7 @@
                                 <h4>{{ project.title }}</h4>
                             </div>
                             <div class="showed-content">
-                                <img v-if="project.image" :src="project.image" :alt="project.title">
-                                <img v-else src="assets/images/portfolio-image.png" :alt="project.title">
+                                <img :src="project.image" :alt="project.title">
                             </div>
                         </div>
                     </nuxt-link>
@@ -35,5 +34,9 @@ const { projects } = store;
 <style lang="css" scoped>
 .projects-title {
     font-size: 2.5rem;
+}
+
+img {
+    max-height: 110px;
 }
 </style>
