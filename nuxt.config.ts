@@ -44,13 +44,8 @@ export default defineNuxtConfig({
     langDir: "locales",
     strategy: "prefix_except_default",
     defaultLocale: "kr", // Default Language
-    detectBrowserLanguage: {
-      useCookie: true,
-      alwaysRedirect: true,
-    },
     locales: [
       { code: "kr", iso: "kr-KR", file: "kr.json" },
-      { code: "en", iso: "en-US", file: "en.json" },
     ],
   },
 
