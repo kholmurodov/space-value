@@ -968,9 +968,8 @@ Banner Style
     margin-right: 45px;
 }
 
-.main-banner .left-content h6 {
+.main-banner .left-content h5 {
     text-transform: uppercase;
-    font-size: 18px;
     color: #03a4ed;
     margin-bottom: 15px;
 }
@@ -1164,19 +1163,6 @@ Services Style
     position: relative;
     z-index: 2;
 }
-
-.our-services .first-bar .filled-bar {
-    width: 71%;
-}
-
-.our-services .second-bar .filled-bar {
-    width: 83%;
-}
-
-.our-services .third-bar .filled-bar {
-    width: 90%;
-}
-
 
 /* 
 ---------------------------------------------

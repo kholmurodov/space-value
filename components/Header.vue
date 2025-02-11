@@ -26,3 +26,9 @@
         </div>
     </header>
 </template>
+
+<style scoped>
+.logo-img {
+    width: 150px;
+}
+</style>

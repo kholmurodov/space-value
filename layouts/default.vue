@@ -1,6 +1,6 @@
 <template>
     <div>
-        <HomeHeader />
+        <Header />
         <slot />
         <Footer />
     </div>
