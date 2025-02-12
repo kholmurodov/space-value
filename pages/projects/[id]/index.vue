@@ -31,7 +31,7 @@
                                     </div>
 
                                     <div class="blog-item-meta pb-4">
-                                        <img class="img-fluid rounded" :src="project.image" :alt="project.title">
+                                        <img class="img-fluid rounded" :src="`/img/projects${project.image}`" :alt="project.title">
                                     </div>
 
                                     <div class="blog-item-meta px-5">
@@ -61,7 +61,7 @@
                             <div class="col-lg-4">
                                 <div class="sidebar-wrap">
                                     <div class="sidebar-widget latest-post p-4 py-0">
-                                        <div class="media pb-3" v-for="project in latest5">
+                                        <div class="media pb-3" v-for="project in latest5" :key="project.id">
                                             <nuxt-link :to="'/projects/' + project.id">
                                                 <img :src="project.image" :alt="project.image">
                                             </nuxt-link>
