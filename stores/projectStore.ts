@@ -270,7 +270,7 @@ export const useProjectStore = defineStore("project", {
           발주처: "KT",
           OS: "Cent OS",
           개발기술: "Apache/JBOSS/GeoServer",
-          db: "PPAS/PostGIS",
+          DB: "PPAS/PostGIS",
           사용기술: "Spring프레임워크/JAVA/JSP",
           기타: [
             "최적위치타겟팅 데이터 조회/활 용 기능 구현",
@@ -290,7 +290,7 @@ export const useProjectStore = defineStore("project", {
           발주처: "KT",
           OS: "Cent OS",
           개발기술: "Apache/JBOSS/GeoServer",
-          db: "PPAS/PostGIS",
+          DB: "PPAS/PostGIS",
           사용기술: "Spring프레임워크/JAVA/JSP",
           기타: [
             "다양한 검색조건 지원",
@@ -310,7 +310,7 @@ export const useProjectStore = defineStore("project", {
           발주처: "KT DS",
           OS: "Cent OS",
           개발기술: "Apache/JBOSS",
-          db: "Postgres",
+          DB: "Postgres",
           사용기술: "Spring/JAVA/JSP/Vue",
           기타: [
             "클라우드 기반의 유연하고 확장 가능한 원격수업 지원",
@@ -330,7 +330,7 @@ export const useProjectStore = defineStore("project", {
           발주처: "KT DS",
           OS: "Cent OS",
           개발기술: "Apache/JBOSS",
-          db: "Postgres",
+          DB: "Postgres",
           사용기술: "Spring/JAVA/JSP/Vue/Redis",
           기타: [
             "에듀테크 기반의 미래형 교육을 지원하는 통합 플랫폼",
