@@ -16,7 +16,7 @@
                                 <h4>{{ project.title }}</h4>
                             </div>
                             <div class="showed-content">
-                                <img :src="project.image" :alt="project.title">
+                                <img :src="`/img/projects/${project.image}`" :alt="project.title">
                             </div>
                         </div>
                     </nuxt-link>
