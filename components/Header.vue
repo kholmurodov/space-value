@@ -11,7 +11,8 @@
                         <ul class="nav">
                             <li class="scroll-to-section"><a href="#top" class="active">{{ $t("navbar.home") }}</a></li>
                             <li class="scroll-to-section"><a href="#about">{{ $t("navbar.aboutUs") }}</a></li>
-                            <li class="scroll-to-section"><a href="#portfolio">{{ $t("navbar.portfolio") }}</a></li>
+                            <li class="scroll-to-section"><a href="#si-projects">보유기술</a></li>
+                            <li class="scroll-to-section"><a href="#qa-projects">검증서비스</a></li>
                             <li class="scroll-to-section">
                                 <div class="main-red-button"><a href="#contact">{{ $t("navbar.contactUs") }}</a></div>
                             </li>

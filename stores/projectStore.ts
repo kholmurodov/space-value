@@ -1,5 +1,8 @@
-type ProjectTypes = {
+export type ProjectType = "qa" | "si";
+
+type Project = {
   id: string;
+  type: ProjectType;
   title: string;
   image: string;
   description?: string;
@@ -7,7 +10,7 @@ type ProjectTypes = {
 };
 
 type ProjectStoreShape = {
-  projects: ProjectTypes[];
+  projects: Project[];
 };
 
 export const useProjectStore = defineStore("project", {
@@ -15,6 +18,7 @@ export const useProjectStore = defineStore("project", {
     projects: [
       {
         id: "01",
+        type: "si",
         title: "인터넷물류 직거래장터시범 서비스 구축",
         image: "1.jpg",
         description:
@@ -35,6 +39,7 @@ export const useProjectStore = defineStore("project", {
       },
       {
         id: "02",
+        type: "si",
         title: "규장각 기록유산 시스템구축",
         image: "2.jpg",
         description:
@@ -55,6 +60,7 @@ export const useProjectStore = defineStore("project", {
       },
       {
         id: "03",
+        type: "si",
         title: "KT 모카월렛 1차 고도화 개발 및 운영 유지보수",
         image: "3.jpg",
         description:
@@ -75,6 +81,7 @@ export const useProjectStore = defineStore("project", {
       },
       {
         id: "04",
+        type: "si",
         title: "동북아역사넷 웹사이트 고도화 사업",
         image: "4.jpg",
         description:
@@ -95,6 +102,7 @@ export const useProjectStore = defineStore("project", {
       },
       {
         id: "05",
+        type: "si",
         title: "데이터스토어 시스템 개선 및 유지보수 용역",
         image: "5.jpg",
         description:
@@ -115,6 +123,7 @@ export const useProjectStore = defineStore("project", {
       },
       {
         id: "06",
+        type: "si",
         title: "KT 미디어허브 옥외광고 분석서비스 개발 용역",
         image: "6.jpg",
         description:
@@ -135,6 +144,7 @@ export const useProjectStore = defineStore("project", {
       },
       {
         id: "07",
+        type: "si",
         title: "KT Clip 2차 고도화 사업",
         image: "7.jpg",
         description:
@@ -155,6 +165,7 @@ export const useProjectStore = defineStore("project", {
       },
       {
         id: "08",
+        type: "si",
         title: "KT 매체세일즈포털 (AD CORE) 구축 및 통합 운영",
         image: "8.jpg",
         description:
@@ -174,6 +185,7 @@ export const useProjectStore = defineStore("project", {
       },
       {
         id: "09",
+        type: "si",
         title: "K-ICT 빅데이터 센터 기초 융합데이터",
         image: "9.jpg",
         description:
@@ -190,6 +202,7 @@ export const useProjectStore = defineStore("project", {
       },
       {
         id: "10",
+        type: "si",
         title: "국립공원관리공단 생태탐방연수원 통합홈페이지 구축",
         image: "8.jpg",
         description:
@@ -210,6 +223,7 @@ export const useProjectStore = defineStore("project", {
       },
       {
         id: "11",
+        type: "si",
         title: "서울형  지도태깅과 공간정보 플랫폼 활용 확산 사업",
         image: "11.jpg",
         description:
@@ -229,6 +243,7 @@ export const useProjectStore = defineStore("project", {
       },
       {
         id: "12",
+        type: "si",
         title: "YES24 Shift Novel Service 웹사이트 구축",
         image: "12.jpg",
         description:
@@ -248,6 +263,7 @@ export const useProjectStore = defineStore("project", {
       },
       {
         id: "13",
+        type: "si",
         title: "미래엔 디지털교과서 HTML5 콘텐츠 개발",
         image: "13.jpg",
         description:
@@ -262,6 +278,7 @@ export const useProjectStore = defineStore("project", {
       },
       {
         id: "14",
+        type: "si",
         title: "최적위치타켓팅 솔루션 구축",
         image: "14.jpg",
         description:
@@ -282,6 +299,7 @@ export const useProjectStore = defineStore("project", {
       },
       {
         id: "15",
+        type: "si",
         title: "최적위치타켓팅 솔루션 구축",
         image: "15.jpg",
         description:
@@ -302,7 +320,8 @@ export const useProjectStore = defineStore("project", {
       },
       {
         id: "16",
-        title: "서울 원격수업 지원 플랫폼 유지보수 및 안정화 ",
+        type: "si",
+        title: "서울 원격수업 지원 플랫폼 유지보수 및 안정화",
         image: "16.jpg",
         description:
           "포스트 코로나 시대에 대비해 유연하고 안전한 원격교육 플랫폼의 필요성이 대두되고 있습니다. 이에 최신 ICT기술을 활용해 교수자와 학습자 간의 맞춤형 교육플랫폼 요구와 원격수업에 대한 필요에 맞춰 쌍방향 실시간 화상 수업, 비실시간 수업 지원 연계시스템 및 사이버 학급형 LMS 시스템을 구축하였습니다.",
@@ -322,7 +341,70 @@ export const useProjectStore = defineStore("project", {
       },
       {
         id: "17",
-        title: "하이러닝 서비스 유지보수 및 안정화 ",
+        type: "si",
+        title: "하이러닝 서비스 유지보수 및 안정화",
+        image: "17.jpg",
+        description:
+          "최신 ICT 기술을 활용해 교수자와 학습자 간의 맞춤형 교육 플랫폼을 구축 하였습니다.학교 현장의 다양한 요구사항과 필요에 맞춰 교육용 AI 및 학습 관리 시스템 기반의 온라인 교수·학습 플랫폼을 제공합니다.유연하고 안전한 교육 플랫폼을 제공하여 학교 현장의 편의를 제공 합니다.",
+        about: {
+          발주처: "KT DS",
+          OS: "Cent OS",
+          개발기술: "Apache/JBOSS",
+          DB: "Postgres",
+          사용기술: "Spring/JAVA/JSP/Vue/Redis",
+          기타: [
+            "에듀테크 기반의 미래형 교육을 지원하는 통합 플랫폼",
+            "학생 학업/진로.이수 등의 손쉬운 학급관리 지원 제공",
+            "라이브학습도구, 소통툴, 자료 연동",
+            "AI 기반의 맞춤형 진단과 콘텐츠 추천 및 학습을 제공",
+          ],
+        },
+      },
+      {
+        id: "18",
+        type: "qa",
+        title: "테스트 케이스 관리 - Testlink",
+        image: "18.jpg",
+        description:
+          "테스트 스위트, 케이스 구조화 및 버전별 관리로 변경된 명세에 따라 현행화 및 히스토리 관리에 용이 프로젝트, 플랫폼, 빌드별 케이스와 테스터 지정으로 테스트 계획을 체계적으로 관리 가능 상황별 보고서 추출 및 mantisBT와 연동으로 테스트와 동시에 이슈 리포팅",
+        about: {
+          발주처: "KT DS",
+          사용툴: "Testlink",
+          WEB: "Apache",
+          DB: "MySQL",
+          기타: [
+            "오픈소스 툴 활용",
+            "커스텀 및 프로젝트 요구도에 맞게 구조화 진행",
+            "기존 명세 기반으로 현행화",
+            "구글 드라이버로 파일 테스크 관리 후 링크 첨부하여 테스트 케이스별 명세 확인 가능",
+          ],
+        },
+      },
+      {
+        id: "19",
+        type: "qa",
+        title: "하이러닝 서비스 유지보수 및 안정화",
+        image: "17.jpg",
+        description:
+          "최신 ICT 기술을 활용해 교수자와 학습자 간의 맞춤형 교육 플랫폼을 구축 하였습니다.학교 현장의 다양한 요구사항과 필요에 맞춰 교육용 AI 및 학습 관리 시스템 기반의 온라인 교수·학습 플랫폼을 제공합니다.유연하고 안전한 교육 플랫폼을 제공하여 학교 현장의 편의를 제공 합니다.",
+        about: {
+          발주처: "KT DS",
+          OS: "Cent OS",
+          개발기술: "Apache/JBOSS",
+          DB: "Postgres",
+          사용기술: "Spring/JAVA/JSP/Vue/Redis",
+          기타: [
+            "에듀테크 기반의 미래형 교육을 지원하는 통합 플랫폼",
+            "학생 학업/진로.이수 등의 손쉬운 학급관리 지원 제공",
+            "라이브학습도구, 소통툴, 자료 연동",
+            "AI 기반의 맞춤형 진단과 콘텐츠 추천 및 학습을 제공",
+          ],
+        },
+      },
+      {
+        id: "20",
+        type: "qa",
+        title: "하이러닝 서비스 유지보수 및 안정화",
         image: "17.jpg",
         description:
           "최신 ICT 기술을 활용해 교수자와 학습자 간의 맞춤형 교육 플랫폼을 구축 하였습니다.학교 현장의 다양한 요구사항과 필요에 맞춰 교육용 AI 및 학습 관리 시스템 기반의 온라인 교수·학습 플랫폼을 제공합니다.유연하고 안전한 교육 플랫폼을 제공하여 학교 현장의 편의를 제공 합니다.",
@@ -352,12 +434,9 @@ export const useProjectStore = defineStore("project", {
       return shuffled.length <= 5 ? shuffled : shuffled.slice(-5);
     },
     getProject: (state) => (id: string) =>
-      state.projects.find((b) => b.id === id),
+      state.projects.find((project) => project.id === id),
+    getProjects: (state) => (type: string) =>
+      state.projects.filter((project) => project.type === type),
     projectCount: (state) => state.projects.length,
-  },
-  actions: {
-    addProject(project: ProjectTypes) {
-      this.projects.push(project);
-    },
   },
 });
