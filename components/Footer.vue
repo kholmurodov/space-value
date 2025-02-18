@@ -17,7 +17,7 @@
                 </li>
                 <li>
                   <label><strong>전화번호 : </strong></label>
-                  <p>010-2354-8025</p>
+                  <p>02-6949-0901</p>
                 </li>
               </ul>
             </div>
@@ -26,21 +26,13 @@
         <div class="col-sm-8 col-xs-12">
           <iframe
             src="https://maps.google.com/maps?hl=en&amp;q=서울시 관악구 복은6길 49&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
-            width="100%"
-            height="300"
-            style="border: 0"
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
+            width="100%" height="300" style="border: 0" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </div>
 
       <div class="row">
-        <div
-          class="col-lg-12 wow fadeIn"
-          data-wow-duration="1s"
-          data-wow-delay="0.25s"
-        >
+        <div class="col-lg-12 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.25s">
           <p>
             <nuxt-link to="/" rel="nofollow">
               {{ $t("hero.company") }} 서울시 관악구 복은6길 49, 1층 사업자번호:
@@ -91,14 +83,17 @@ aside .widget ul.cat {
   list-style: none;
   margin-left: 0;
 }
+
 aside .widget ul.cat li {
   padding-left: 24px;
   background-repeat: no-repeat;
   background-position: -456px -69px;
 }
+
 aside .widget ul.cat li a {
   color: #444;
 }
+
 aside .widget ul.cat li a:hover {
   text-decoration: none;
 }
