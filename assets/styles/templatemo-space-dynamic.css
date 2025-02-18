@@ -1564,7 +1564,7 @@ responsive
 }
 
 @media (max-width: 992px) {
-   
+
 
     .main-banner .left-content {
         margin-right: 0px;
@@ -1582,28 +1582,23 @@ responsive
         width: 100% !important;
     }
 
-    #about {
-        padding-top: 0;
-        margin-top: 0px;
-    }
-
     .about-us {
         position: relative;
         background-image: none;
-        padding: 0px;
     }
 
+
     .about-us .left-image {
-        margin-right: 0px;
-        position: absolute;
+        /* margin-right: 0px; */
+        /* position: absolute; */
+        /* right: 0; */
+        margin-left: auto;
+        margin-right: auto;
         
-        right: 0;
-    }
-    .about-us .left-image img{
-        top: 200;
-        z-index: 1;
+        
         
     }
+    
 
     .about-us .services {
         text-align: center;
@@ -1623,14 +1618,10 @@ responsive
         text-align: left;
     }
 
-    .our-services {
+    /* .our-services {
         padding-top: 200px;
-    }
+    } */
 
-    .our-services .left-image {
-        margin-right: 0px;
-        margin-bottom: 45px;
-    }
 
     .our-services .section-heading h2,
     .our-services .section-heading p {
@@ -1638,17 +1629,14 @@ responsive
         text-align: center;
     }
 
-    .our-portfolio  {
-        margin-top: 200px;
-    }
-
-    .our-portfolio .item {
-        
-    }
-
     .our-blog {
-        margin-top: 0px;
+        margin-top: 45px;
     }
+
+    .bg-1 {
+        background: url("/assets/images/blog/media_blog_bg.jpg") no-repeat 50% 50%;
+        background-size: cover;
+      }
 
     .our-blog .top-dec {
         display: none;
@@ -1657,7 +1645,7 @@ responsive
     .our-blog .section-heading h2 {
         margin-right: 0px;
         text-align: center;
-        margin-bottom: 45px;
+        
     }
 
     .our-blog .left-image .info .inner-content {
@@ -1676,7 +1664,7 @@ responsive
     }
 
     .contact-us {
-        margin-top: 60px;
+    
         padding: 120px 0px;
     }
 

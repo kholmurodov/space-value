@@ -4,7 +4,7 @@
       <div class="row">
         <div class="col-lg-6 offset-lg-3">
           <div class="section-heading wow bounceIn" data-wow-duration="1s" data-wow-delay="0.2s">
-            <h2 class="projects-title" id="project-header">{{ title }}</h2>
+            <h2 class="projects-title">{{ title }}</h2>
           </div>
         </div>
       </div>

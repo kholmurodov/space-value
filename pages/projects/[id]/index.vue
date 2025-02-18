@@ -5,14 +5,14 @@
                 <section class="page-title bg-1">
                     <div class="container">
                         <div class="block text-center">
-                            <h2 class="text-capitalize mb-4 text-white">{{ project.title }}</h2>
+                            <h2 class="text-capitalize  text-white mb-4">{{ project.title }}</h2>
                             <ul class="list-inline">
                                 <li class="list-inline-item">
                                     <nuxt-link to="/" class="text-white">Home</nuxt-link>
                                 </li>
                                 <li class="list-inline-item"><span class="text-white-50">/</span></li>
                                 <li class="list-inline-item">
-                                    <span class="text-white-50" v-html="project.title"></span>
+                                    <span class="text-white-50 " v-html="project.title"></span>
                                 </li>
                             </ul>
                         </div>
@@ -31,10 +31,11 @@
                                     </div>
 
                                     <div class="blog-item-meta pb-4">
-                                        <img class="img-fluid rounded" :src="`/img/projects/${project.image}`" :alt="project.title">
+                                        <img class="img-fluid rounded" :src="`/img/projects/${project.image}`"
+                                            :alt="project.title">
                                     </div>
 
-                                    <div class="blog-item-meta px-5">
+                                    <div class="blog-item-meta">
                                         <table class="table">
                                             <tbody>
                                                 <tr v-for="key of Object.keys(project.about)" :key="key">

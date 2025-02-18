@@ -4,7 +4,10 @@
       <div class="row">
         <div class="col-lg-4">
           <div class="left-image wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
-            <img src="assets/images/about-left-image.png" alt="person graphic" />
+            <div class="">
+              <img src=" assets/images/about-left-image.png" class="object-fit-contain" alt="person graphic" />
+            </div>
+
           </div>
         </div>
         <div class="col-lg-8 align-self-center">
