@@ -3,35 +3,20 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-6 offset-lg-3">
-          <div
-            class="section-heading wow bounceIn"
-            data-wow-duration="1s"
-            data-wow-delay="0.2s"
-          >
-            <h2 class="projects-title">{{ title }}</h2>
+          <div class="section-heading wow bounceIn" data-wow-duration="1s" data-wow-delay="0.2s">
+            <h2 class="projects-title" id="project-header">{{ title }}</h2>
           </div>
         </div>
       </div>
       <div class="row">
-        <div
-          v-for="project in projects"
-          :key="project.id"
-          class="col-lg-3 col-sm-6 mb-5"
-        >
+        <div v-for="project in projects" :key="project.id" class="col-lg-3 col-sm-6 mb-5">
           <nuxt-link :to="`/projects/${project.id}`">
-            <div
-              class="item wow bounceInUp"
-              data-wow-duration="1s"
-              data-wow-delay="0.3s"
-            >
+            <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.3s">
               <div class="hidden-content">
                 <h4>{{ project.title }}</h4>
               </div>
               <div class="showed-content">
-                <img
-                  :src="`/img/projects/${project.image}`"
-                  :alt="project.title"
-                />
+                <img :src="`/img/projects/${project.image}`" :alt="project.title" />
               </div>
             </div>
           </nuxt-link>
@@ -74,5 +59,6 @@ img {
 
 #qa-projects {
   padding-top: 0 !important;
+
 }
 </style>

@@ -937,7 +937,7 @@ Banner Style
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    padding: 90px 0px 120px 0px;
+    padding: 100px 0px 50px 0px;
     position: relative;
     overflow: hidden;
 }
@@ -1177,8 +1177,6 @@ Portfolio
 
 .our-portfolio .section-heading h2 {
     text-align: center;
-    margin: 0px 90px 0px 90px;
-    margin-bottom: 100px;
     position: relative;
     z-index: 1;
 }
@@ -1244,7 +1242,7 @@ Portfolio
 }
 
 .our-portfolio .showed-content {
-    top: 0px;
+    top: 30px;
     position: relative;
     z-index: 3;
     background-color: #fff;
@@ -1408,7 +1406,7 @@ contact
 */
 
 .contact-us {
-    padding: 160px 0px;
+    /* padding: 160px 0px; */
     background-image: url(../images/contact-bg_edited.jpg);
     background-repeat: no-repeat;
     background-position: center center;
@@ -1566,14 +1564,12 @@ responsive
 }
 
 @media (max-width: 992px) {
-    .main-banner {
-        padding-top: 196px;
-    }
+   
 
     .main-banner .left-content {
         margin-right: 0px;
         text-align: center;
-        margin-bottom: 45px;
+        margin-top: 75px;
     }
 
     .main-banner:after {
@@ -1587,6 +1583,7 @@ responsive
     }
 
     #about {
+        padding-top: 0;
         margin-top: 0px;
     }
 
@@ -1599,8 +1596,13 @@ responsive
     .about-us .left-image {
         margin-right: 0px;
         position: absolute;
-        bottom: -220px;
+        
         right: 0;
+    }
+    .about-us .left-image img{
+        top: 200;
+        z-index: 1;
+        
     }
 
     .about-us .services {
@@ -1614,7 +1616,7 @@ responsive
         background: linear-gradient(105deg, rgb(3, 164, 237) 0%, rgb(3, 164, 237) 100%);
         padding: 30px;
         border-radius: 20px;
-        display: inline-block;
+        /* display: inline-block; */
     }
 
     .about-us .services .item .right-text {
@@ -1622,7 +1624,7 @@ responsive
     }
 
     .our-services {
-        margin-top: 200px;
+        padding-top: 200px;
     }
 
     .our-services .left-image {
@@ -1636,12 +1638,12 @@ responsive
         text-align: center;
     }
 
-    .our-portfolio .section-heading h2 {
-        margin: 0px 0px 80px 0px;
+    .our-portfolio  {
+        margin-top: 200px;
     }
 
     .our-portfolio .item {
-        margin-bottom: 15px;
+        
     }
 
     .our-blog {

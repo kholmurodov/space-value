@@ -1,6 +1,6 @@
 <template>
   <footer id="contact">
-    <div class="container mt-5">
+    <div class="container">
       <div class="row">
         <div class="col-sm-4 col-xs-12">
           <aside>
