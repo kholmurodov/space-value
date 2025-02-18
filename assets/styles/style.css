@@ -237,9 +237,9 @@ input[type="tel"]:focus {
   background-repeat: repeat-x;
 }
 
-.section {
+/* .section {
   padding: 100px 0;
-}
+} */
 
 .section-sm {
   padding: 70px 0;
@@ -560,7 +560,7 @@ ul.dropdown-menu li {
 }
 
 .bg-1 {
-  background: url("/assets/images/blog/media-blog-bg.jpg") no-repeat 50% 50%;
+  background: url("/assets/images/blog/blog_bg.png") no-repeat 50% 50%;
   background-size: cover;
 }
 

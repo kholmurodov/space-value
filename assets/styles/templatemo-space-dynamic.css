@@ -1044,10 +1044,6 @@ About Us Style
 --------------------------------------------- 
 */
 
-#about {
-    
-}
-
 .about-us {
     background-image: url(../images/about-bg_edited.jpg);
     background-repeat: no-repeat;
@@ -1170,8 +1166,8 @@ Portfolio
 --------------------------------------------- 
 */
 
-.our-portfolio {
-    padding-top: 120px;
+.our-portfolio :first-child {
+    padding-top: 0;
     margin-top: 0px;
 }
 
@@ -1269,6 +1265,12 @@ Blog
     margin-top: 100px;
     padding-top: 120px;
 }
+
+.our-blog .table-center{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
 
 .our-blog .section-heading h2 {
     margin-right: 180px;
@@ -1564,7 +1566,7 @@ responsive
 }
 
 @media (max-width: 992px) {
-
+    
 
     .main-banner .left-content {
         margin-right: 0px;
@@ -1582,7 +1584,12 @@ responsive
         width: 100% !important;
     }
 
-    .about-us {
+    .about-us{
+       padding: 0; 
+       margin: 0;
+    }
+
+    .about-us .section {
         position: relative;
         background-image: none;
     }
@@ -1594,9 +1601,6 @@ responsive
         /* right: 0; */
         margin-left: auto;
         margin-right: auto;
-        
-        
-        
     }
     
 
@@ -1618,10 +1622,10 @@ responsive
         text-align: left;
     }
 
-    /* .our-services {
-        padding-top: 200px;
-    } */
-
+    .our-portfolio {
+        padding-top: 10px;
+        margin-top: 0px;
+    }
 
     .our-services .section-heading h2,
     .our-services .section-heading p {
@@ -1629,14 +1633,16 @@ responsive
         text-align: center;
     }
 
+    
+
     .our-blog {
         margin-top: 45px;
     }
 
-    .bg-1 {
-        background: url("/assets/images/blog/media_blog_bg.jpg") no-repeat 50% 50%;
-        background-size: cover;
-      }
+    .our-blog .table-center{
+        margin: 0;
+        padding: 0;
+    }
 
     .our-blog .top-dec {
         display: none;
@@ -1661,6 +1667,10 @@ responsive
 
     .our-blog .left-image {
         margin-bottom: 45px;
+    }
+    
+    .our-blog .section  {
+        padding: 0;
     }
 
     .contact-us {
