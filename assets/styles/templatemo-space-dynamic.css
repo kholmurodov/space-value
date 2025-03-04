@@ -937,7 +937,7 @@ Banner Style
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    padding: 90px 0px 120px 0px;
+    padding: 226px 0px 120px 0px;
     position: relative;
     overflow: hidden;
 }
@@ -1588,6 +1588,7 @@ responsive
 
     #about {
         margin-top: 0px;
+        padding-top: 0px;
     }
 
     .about-us {
@@ -1644,6 +1645,14 @@ responsive
         margin-bottom: 15px;
     }
 
+    #si-projects, #qa-projects {
+        padding-bottom: 0;
+    }
+
+    #si-projects .container {
+        margin-top: 230px;
+    }
+
     .our-blog {
         margin-top: 0px;
     }
@@ -1674,7 +1683,6 @@ responsive
     }
 
     .contact-us {
-        margin-top: 60px;
         padding: 120px 0px;
     }
 
